@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nanoc</title>
-    <link href="https://blog.nanoc.work/feed.xml" rel="self" />
-    <link href="https://blog.nanoc.work" />
+    <link href="https://nanoc.work/feed.xml" rel="self" />
+    <link href="https://nanoc.work" />
     <updated>2022-02-05T20:21:20+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
-    <id>https://blog.nanoc.work</id>
+    <id>https://nanoc.work</id>
 
     <entry>
         <title>时间线分隔符</title>
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/shi-jian-xian-fen-ge-fu/"/>
-        <id>https://blog.nanoc.work/shi-jian-xian-fen-ge-fu/</id>
+        <link href="https://nanoc.work/shi-jian-xian-fen-ge-fu/"/>
+        <id>https://nanoc.work/shi-jian-xian-fen-ge-fu/</id>
             <category term="Others"/>
 
         <updated>2022-02-05T20:21:20+08:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://blog.nanoc.work/media/posts/163/2.jpg" alt="" />
+                        <img src="https://nanoc.work/media/posts/163/2.jpg" alt="" />
                     时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://blog.nanoc.work/media/posts/163/2.jpg" alt="" />
+                    <img src="https://nanoc.work/media/posts/163/2.jpg" alt="" />
                 <p>时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。</p>
 
             ]]>
@@ -38,8 +38,8 @@
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/"/>
-        <id>https://blog.nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/</id>
+        <link href="https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/"/>
+        <id>https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/</id>
             <category term="Python"/>
 
         <updated>2022-02-05T20:05:40+08:00</updated>
@@ -126,8 +126,8 @@ demo = selector.xpath(&#39;&#39;)
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/pythonjin-xing-base64jie-ma/"/>
-        <id>https://blog.nanoc.work/pythonjin-xing-base64jie-ma/</id>
+        <link href="https://nanoc.work/pythonjin-xing-base64jie-ma/"/>
+        <id>https://nanoc.work/pythonjin-xing-base64jie-ma/</id>
             <category term="Python"/>
 
         <updated>2022-02-05T20:05:17+08:00</updated>
@@ -162,8 +162,8 @@ print(c)
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/"/>
-        <id>https://blog.nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/</id>
+        <link href="https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/"/>
+        <id>https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/</id>
             <category term="Python"/>
 
         <updated>2022-02-05T20:04:59+08:00</updated>
@@ -222,8 +222,8 @@ if __name__ == &quot;__main__&quot;:
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/python-wen-jian-du-xie-cao-zuo/"/>
-        <id>https://blog.nanoc.work/python-wen-jian-du-xie-cao-zuo/</id>
+        <link href="https://nanoc.work/python-wen-jian-du-xie-cao-zuo/"/>
+        <id>https://nanoc.work/python-wen-jian-du-xie-cao-zuo/</id>
             <category term="Python"/>
 
         <updated>2022-02-05T20:04:42+08:00</updated>
@@ -294,8 +294,8 @@ f.close()
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/"/>
-        <id>https://blog.nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/</id>
+        <link href="https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/"/>
+        <id>https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/</id>
             <category term="C++"/>
 
         <updated>2022-02-05T20:04:19+08:00</updated>
@@ -350,8 +350,8 @@ int main()
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/c-stl-next_permutation/"/>
-        <id>https://blog.nanoc.work/c-stl-next_permutation/</id>
+        <link href="https://nanoc.work/c-stl-next_permutation/"/>
+        <id>https://nanoc.work/c-stl-next_permutation/</id>
             <category term="C++"/>
 
         <updated>2022-02-05T20:04:00+08:00</updated>
@@ -413,8 +413,8 @@ int main() {
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/"/>
-        <id>https://blog.nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/</id>
+        <link href="https://nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/"/>
+        <id>https://nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/</id>
             <category term="Windows"/>
 
         <updated>2022-02-05T20:03:36+08:00</updated>
@@ -442,8 +442,8 @@ int main() {
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/apacheqiang-zhi-https/"/>
-        <id>https://blog.nanoc.work/apacheqiang-zhi-https/</id>
+        <link href="https://nanoc.work/apacheqiang-zhi-https/"/>
+        <id>https://nanoc.work/apacheqiang-zhi-https/</id>
             <category term="Apache"/>
 
         <updated>2022-02-05T20:02:40+08:00</updated>
@@ -486,8 +486,8 @@ RewriteRule ^(.*)$ /index.php/$1 [L]
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/"/>
-        <id>https://blog.nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/</id>
+        <link href="https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/"/>
+        <id>https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/</id>
             <category term="C++"/>
 
         <updated>2022-02-05T20:02:09+08:00</updated>

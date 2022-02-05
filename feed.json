@@ -2,20 +2,20 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Nanoc",
     "description": "",
-    "home_page_url": "https://blog.nanoc.work",
-    "feed_url": "https://blog.nanoc.work/feed.json",
+    "home_page_url": "https://nanoc.work",
+    "feed_url": "https://nanoc.work/feed.json",
     "user_comment": "",
     "author": {
         "name": "Nanoc"
     },
     "items": [
         {
-            "id": "https://blog.nanoc.work/shi-jian-xian-fen-ge-fu/",
-            "url": "https://blog.nanoc.work/shi-jian-xian-fen-ge-fu/",
+            "id": "https://nanoc.work/shi-jian-xian-fen-ge-fu/",
+            "url": "https://nanoc.work/shi-jian-xian-fen-ge-fu/",
             "title": "时间线分隔符",
             "summary": "时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。 ",
             "content_html": "<p>时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。</p>\n",
-            "image": "https://blog.nanoc.work/media/posts/163/2.jpg",
+            "image": "https://nanoc.work/media/posts/163/2.jpg",
             "author": {
                 "name": "Nanoc"
             },
@@ -26,8 +26,8 @@
             "date_modified": "2022-02-05T20:21:20+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/",
-            "url": "https://blog.nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/",
+            "id": "https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/",
+            "url": "https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/",
             "title": "Python-request&amp;beautifulsoup爬虫使用方法速记",
             "summary": "Python-request&amp;beautifulsoup爬虫使用方法速记 简单记录request&amp;bs4使用方法。 import requests # 浏览器头 headers = { &#39;user_agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11&#39; } # 传参 params = {} params[&#39;email&#39;] = userName[number] params[&#39;passwd&#39;] = userPasswd[number] # 发送request get请求 response = requests.get(url=url, params=params, headers=headers) # 发送request post请求 response&hellip;",
             "content_html": "<h2 id=\"python-requestbeautifulsoup爬虫使用方法速记\">Python-request&amp;beautifulsoup爬虫使用方法速记</h2>\n<p>简单记录request&amp;bs4使用方法。</p>\n<h2 id=\"request\">request</h2>\n<pre><code class=\"language-python\">import requests\n# 浏览器头\nheaders = {\n    &#39;user_agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11&#39;\n}\n# 传参\nparams = {}\nparams[&#39;email&#39;] = userName[number]\nparams[&#39;passwd&#39;] = userPasswd[number]\n# 发送request get请求\nresponse = requests.get(url=url, params=params, headers=headers)\n# 发送request post请求\nresponse = requests.post(url=url, params=params, headers=headers)\n</code></pre>\n<pre><code class=\"language-python\">headers = {\n    &#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; WOW64)&#39;\n    &#39; AppleWebKit/537.36(KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&#39;,\n    &#39;Content-Type&#39;: &#39;application/x-www-form-urlencoded&#39;,\n}\n</code></pre>\n<h2 id=\"beautifulsoup\">beautifulsoup</h2>\n<pre><code class=\"language-python\">from bs4 import BeautifulSoup\n\n#-----\n# 解析|\n#-----\n# 发起请求\nresponse = requests.get(url, headers=headers)\n# 指定编码\nresponse.encoding = &#39;utf-8&#39;\nsoup = BeautifulSoup(response.text)\n# 使用lxml解析\nsoup = BeautifulSoup(html, &#39;lxml&#39;)\n\n#--------\n# 元素选择| # 使用selector,返回list\n#--------\n# 选择指定元素一次\nsoup = soup.select_one(&quot;a&quot;)\n# 选择全部指定元素\nsoup = soup.select(&quot;a&quot;)\n# 选择全部指定元素\nsoup = soup.find_all(&quot;a&quot;)\n# 按照属性查找\nsoup = soup.select_one(&#39;p [href=&quot;http://example.com/tillie&quot;]&#39;)\n# 通过 id 名查找\nsoup.select_one(&#39;#ID&#39;)\n# 通过类名查找\nsoup.select_one(&#39;.sister&#39;)\n#循环\nfor i in soup:\n    print(i.text)\n\n#--------\n# 获取属性|\n#--------\nlist[0].get(&#39;href&#39;)\n\n\n#--------\n# Xpath|\n#--------\ndemo = selector.xpath(&#39;&#39;)\n</code></pre>\n",
@@ -41,8 +41,8 @@
             "date_modified": "2022-02-05T20:05:40+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/pythonjin-xing-base64jie-ma/",
-            "url": "https://blog.nanoc.work/pythonjin-xing-base64jie-ma/",
+            "id": "https://nanoc.work/pythonjin-xing-base64jie-ma/",
+            "url": "https://nanoc.work/pythonjin-xing-base64jie-ma/",
             "title": "Python进行Base64解码",
             "summary": "Python进行Base64解码 使用base64进行解码 import base64 message = &quot;Hello&quot; # 返回字节对象 a = bytes(message, &#39;utf-8&#39;) print(a) # Base64编码 b = base64.b64encode(a) print(b) # Base64解码并.decode(&#39;utf-8&#39;)去掉b&#39;&#39; c = base64.b64decode(b).decode(&#39;utf-8&#39;) print(c) ",
             "content_html": "<h2 id=\"python进行base64解码\">Python进行Base64解码</h2>\n<p>使用base64进行解码</p>\n<pre><code class=\"language-python\">import base64\n\nmessage = &quot;Hello&quot;\n# 返回字节对象\na = bytes(message, &#39;utf-8&#39;)\nprint(a)\n# Base64编码\nb = base64.b64encode(a)\nprint(b)\n# Base64解码并.decode(&#39;utf-8&#39;)去掉b&#39;&#39;\nc = base64.b64decode(b).decode(&#39;utf-8&#39;)\nprint(c)\n</code></pre>\n",
@@ -56,8 +56,8 @@
             "date_modified": "2022-02-05T20:05:17+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/",
-            "url": "https://blog.nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/",
+            "id": "https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/",
+            "url": "https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/",
             "title": "Python Multiprocessing用法简单速记",
             "summary": "Python Multiprocessing用法简单速记 使用Multiprocessing进行简单多进程。 from multiprocessing import Pool import time import random def toPool(todo): newarr = [] for i in range(1000): newarr.append(random.random()*10) newarr.sort() if __name__ == &quot;__main__&quot;: start_time = time.time() arr = [] for i in range(10000): arr.append(i) for i in arr: newarr = [] for&hellip;",
             "content_html": "<h2 id=\"python-multiprocessing用法简单速记\">Python Multiprocessing用法简单速记</h2>\n<p>使用Multiprocessing进行简单多进程。</p>\n<pre><code class=\"language-python\">from multiprocessing import Pool\nimport time\nimport random\n\ndef toPool(todo):\n    newarr = []\n    for i in range(1000):\n        newarr.append(random.random()*10)\n        newarr.sort()\n\n\nif __name__ == &quot;__main__&quot;:\n    start_time = time.time()\n    arr = []\n    for i in range(10000):\n        arr.append(i)\n    for i in arr:\n        newarr = []\n        for i in range(1000):\n            newarr.append(random.random()*10)\n            newarr.sort()\n    end_time = time.time()\n    use_time = end_time - start_time\n    print(&quot;first:&quot;+ str(use_time))\n    # 多进程\n    start_time = time.time()\n    arr = []\n    for i in range(10000):\n        arr.append(i)\n    pool = Pool(processes=4)\n    pool.map(toPool, arr)\n    pool.close()\n    pool.join()\n    end_time = time.time()\n    use_time = end_time - start_time\n    print(&quot;second:&quot;+ str(use_time))\n</code></pre>\n",
@@ -71,8 +71,8 @@
             "date_modified": "2022-02-05T20:04:59+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/python-wen-jian-du-xie-cao-zuo/",
-            "url": "https://blog.nanoc.work/python-wen-jian-du-xie-cao-zuo/",
+            "id": "https://nanoc.work/python-wen-jian-du-xie-cao-zuo/",
+            "url": "https://nanoc.work/python-wen-jian-du-xie-cao-zuo/",
             "title": "Python 文件读写操作",
             "summary": "读写模式 值 描述 r 读模式 w 写模式 a 追加模式 b 二进制模式（可追加到其他模式中） + 读/写模式（可追加到其他模式中 # 追加读写模式 自动创建文件 f = open(&quot;demo.txt&quot;, &#39;a+&#39;, encoding=&quot;utf-8&quot;) f.write(soup.text) f.close() # 覆盖 自动创建文件 f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w&#39;, encoding=&quot;utf-8&quot;) f.write(&#39;653&#39;) f.close() f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w+&#39;, encoding=&quot;utf-8&quot;) f.write(&#39;653&#39;) # 定位到开头可以正常读取 f.seek(0) print(f.read()) f.close() #&hellip;",
             "content_html": "<h2 id=\"读写模式\">读写模式</h2>\n<table>\n<thead>\n<tr>\n<th>值</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>r</td>\n<td>读模式</td>\n</tr>\n<tr>\n<td>w</td>\n<td>写模式</td>\n</tr>\n<tr>\n<td>a</td>\n<td>追加模式</td>\n</tr>\n<tr>\n<td>b</td>\n<td>二进制模式（可追加到其他模式中）</td>\n</tr>\n<tr>\n<td>+</td>\n<td>读/写模式（可追加到其他模式中</td>\n</tr>\n</tbody></table>\n<pre><code class=\"language-python\"># 追加读写模式 自动创建文件\nf = open(&quot;demo.txt&quot;, &#39;a+&#39;, encoding=&quot;utf-8&quot;)\nf.write(soup.text)\nf.close()\n\n# 覆盖 自动创建文件\nf = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w&#39;, encoding=&quot;utf-8&quot;)\nf.write(&#39;653&#39;) \nf.close()\n\nf = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w+&#39;, encoding=&quot;utf-8&quot;)\nf.write(&#39;653&#39;) \n# 定位到开头可以正常读取\nf.seek(0)\nprint(f.read())\nf.close()\n\n# 只读\nf = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;r&#39;, encoding=&quot;utf-8&quot;)\nf.write(&#39;653&#39;) \nf.close()\n</code></pre>\n",
@@ -86,8 +86,8 @@
             "date_modified": "2022-02-05T20:04:42+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/",
-            "url": "https://blog.nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/",
+            "id": "https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/",
+            "url": "https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/",
             "title": "Cpp 利用stringstream转换字符",
             "summary": "stringstream stringstream是包含在中的，其中定义了三个类：istringstream、ostringstream 和 stringstream，分别用来进行流的输入、输出和输入输出操作。 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { stringstream sts; string x = &quot;10&quot;; int z = 100; string y = &quot;&quot;; //string 给 string sts&lt;&lt;x; y = sts.str(); cout&lt;&lt;y&lt;&lt;endl; //清除缓冲区 /* 在多次数据类型转换的场景下，必须使用 clear() 方法清空 stringstream，不使用 clear()方法或使用 str(&quot;&quot;) 方法，都不能得到数据类型转换的正确结果。 */ sts.str(&quot;&quot;);&hellip;",
             "content_html": "<h2 id=\"stringstream\">stringstream</h2>\n<blockquote>\n<p>stringstream是包含在<sstream>中的，其中定义了三个类：istringstream、ostringstream 和 stringstream，分别用来进行流的输入、输出和输入输出操作。</p>\n</blockquote>\n<h2 id=\"用法\">用法</h2>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n\nint main()\n{\n    stringstream sts;\n    string x = &quot;10&quot;; \n    int z = 100;\n    string y = &quot;&quot;;\n\n    //string 给 string\n    sts&lt;&lt;x;\n    y = sts.str();\n    cout&lt;&lt;y&lt;&lt;endl;\n    \n    //清除缓冲区\n    /*\n    在多次数据类型转换的场景下，必须使用 clear() 方法清空 stringstream，不使用 clear()方法或使用 str(&quot;&quot;) 方法，都不能得到数据类型转换的正确结果。\n    */\n    sts.str(&quot;&quot;);\n    sts.clear();\n\n    //int 给 string\n    sts&lt;&lt;z;\n    x = sts.str();\n    cout&lt;&lt;x&lt;&lt;endl;\n\n    return 0;\n}\n</code></pre>\n",
@@ -101,8 +101,8 @@
             "date_modified": "2022-02-05T20:04:19+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/c-stl-next_permutation/",
-            "url": "https://blog.nanoc.work/c-stl-next_permutation/",
+            "id": "https://nanoc.work/c-stl-next_permutation/",
+            "url": "https://nanoc.work/c-stl-next_permutation/",
             "title": "C++ STL next_permutation",
             "summary": "字典序全排列 举例 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { int a[4]={1,2,3,4}; sort(a,a+4); //数组元素顺序将被改变，直到无法继续排序 do{ cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;&lt;&lt;a[3]&lt;&lt;endl; }while(next_permutation(a,a+4)); return 0; } 找到第99个排列序 #include &lt;bits/stdc++.h&gt; using namespace std; int a[7]={1,2,3,4,5,6,7}; int n=0; int main() { sort(a,a+7); do{ if(n==99){ for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;; cout&lt;&lt;endl; break; }&hellip;",
             "content_html": "<h2 id=\"字典序全排列\">字典序全排列</h2>\n<p>举例</p>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n \nint main() {\n    int a[4]={1,2,3,4};\n    sort(a,a+4);\n    //数组元素顺序将被改变，直到无法继续排序\n    do{\n        cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;&lt;&lt;a[3]&lt;&lt;endl;\n    }while(next_permutation(a,a+4));\n    return 0;\n}\n</code></pre>\n<p>找到第99个排列序</p>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\nint a[7]={1,2,3,4,5,6,7};\nint n=0;\nint main() {\n    sort(a,a+7); \n    do{\n        if(n==99){\n            for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;;\n            cout&lt;&lt;endl;\n            break;\n        }\n        n++;\n    }while(next_permutation(a,a+7));\n\n    sort(a,a+7);\n\n    for(int i = 1 ; next_permutation(a,a+7);i++){\n        if(i==99){\n            for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;;\n            break;\n        }\n    }\n    return 0;\n}\n</code></pre>\n",
@@ -116,8 +116,8 @@
             "date_modified": "2022-02-05T20:04:00+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/",
-            "url": "https://blog.nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/",
+            "id": "https://nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/",
+            "url": "https://nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/",
             "title": "UCM-UCSI ACPI 状态码 43",
             "summary": "UCM-UCSI ACPI 此驱动用于Windows Type-C 接口相关功能，在设备管理中此驱动出现黄色感叹号，并状态43。 受此影响，电脑可能会出现一些异常，如无法PD充电。 Windows特定的系统版本或补丁以及BIOS更新导致的故障。 重置BIOS，笔记本未插电状态关机，并尽可能长按电源键使其开机，并强制断电以强制BIOS重新设置。 如果不适用此方法，请移至Google进行查询，有很多解决办法，但主要跟特定的机器相关。 ",
             "content_html": "<h2 id=\"ucm-ucsi-acpi\">UCM-UCSI ACPI</h2>\n<p>此驱动用于Windows Type-C 接口相关功能，在设备管理中此驱动出现黄色感叹号，并状态43。\n受此影响，电脑可能会出现一些异常，如无法PD充电。</p>\n<h2 id=\"产生原因\">产生原因</h2>\n<p>Windows特定的系统版本或补丁以及BIOS更新导致的故障。</p>\n<h2 id=\"解决方法\">解决方法</h2>\n<p>重置BIOS，笔记本未插电状态关机，并尽可能长按电源键使其开机，并强制断电以强制BIOS重新设置。\n如果不适用此方法，请移至Google进行查询，有很多解决办法，但主要跟特定的机器相关。</p>\n",
@@ -131,8 +131,8 @@
             "date_modified": "2022-02-05T20:03:36+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/apacheqiang-zhi-https/",
-            "url": "https://blog.nanoc.work/apacheqiang-zhi-https/",
+            "id": "https://nanoc.work/apacheqiang-zhi-https/",
+            "url": "https://nanoc.work/apacheqiang-zhi-https/",
             "title": "apache强制HTTPS",
             "summary": "apache强制HTTPS Https已经成为了标配，如无特殊需求，一般需要对80做301重定向到443，即所说的强制Https。 &lt;IfModule mod_rewrite.c&gt; RewriteEngine on RewriteBase / RewriteCond %{SERVER_PORT} !^443$ RewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L] &lt;/IfModule&gt; Apache - Typecho静态化 规则如下： &lt;IfModule mod_rewrite.c&gt; RewriteEngine On # 下面是在根目录，文件夹要修改路径 RewriteBase / RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule ^(.*)$ /index.php/$1 [L] &lt;/IfModule&gt; 接着去Typecho后台也开启静态化。 有多种规则写法 ",
             "content_html": "<h2 id=\"apache强制https\">apache强制HTTPS</h2>\n<p>Https已经成为了标配，如无特殊需求，一般需要对80做301重定向到443，即所说的强制Https。</p>\n<pre><code>&lt;IfModule mod_rewrite.c&gt;\nRewriteEngine on\nRewriteBase /\nRewriteCond %{SERVER_PORT} !^443$\nRewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L]\n&lt;/IfModule&gt;\n</code></pre>\n<h2 id=\"apache---typecho静态化\">Apache - Typecho静态化</h2>\n<p>规则如下：</p>\n<pre><code>&lt;IfModule mod_rewrite.c&gt;\nRewriteEngine On\n# 下面是在根目录，文件夹要修改路径\nRewriteBase /\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule ^(.*)$ /index.php/$1 [L]\n&lt;/IfModule&gt;\n</code></pre>\n<p>接着去Typecho后台也开启静态化。</p>\n<h2 id=\"注意\">注意</h2>\n<p>有多种规则写法</p>\n",
@@ -146,8 +146,8 @@
             "date_modified": "2022-02-05T20:02:40+08:00"
         },
         {
-            "id": "https://blog.nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/",
-            "url": "https://blog.nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/",
+            "id": "https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/",
+            "url": "https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/",
             "title": "C++判断是否为数字或字母",
             "summary": "声明头文件 cctype（字符处理库）中定义了有关字符判断与处理的库函数。 # include &lt;cctype&gt; 相关函数 函数 描述 isalnum(char) 当c是字母或者数字时为真 isalpha(char) 当c是字母时为真 iscntrl(char) 当c是控制字符时为真 isdigit(char) 当c是数字时为真 isgraph(char) 当c不是空格但可打印时为真 islower(char) 当c是小写字母时为真 isprint(char) 当c是可打印字符时为真 ispunct(char) 当c是标点符号时为真 isspace(char) 当c是空白时为真 isupper(char) 当c是大写字母时为真 isxdigit(char) 当c是十六进制时为真 字符转换函数 函数 描述 tolower 将字母转换为小写返回 toupper 将字母转换为大写返回 注意 其中： -isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属于az||AZ||0~9 -isalpha遇到大写字母输出1，遇到小写输出2 #include &lt;bits/stdc++.h&gt; using namespace&hellip;",
             "content_html": "<h2 id=\"声明头文件\">声明头文件</h2>\n<p>cctype（字符处理库）中定义了有关字符判断与处理的库函数。</p>\n<pre><code class=\"language-cpp\"># include &lt;cctype&gt;\n</code></pre>\n<h2 id=\"相关函数\">相关函数</h2>\n<table>\n<thead>\n<tr>\n<th>函数</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>isalnum(char)</td>\n<td>当c是字母或者数字时为真</td>\n</tr>\n<tr>\n<td>isalpha(char)</td>\n<td>当c是字母时为真</td>\n</tr>\n<tr>\n<td>iscntrl(char)</td>\n<td>当c是控制字符时为真</td>\n</tr>\n<tr>\n<td>isdigit(char)</td>\n<td>当c是数字时为真</td>\n</tr>\n<tr>\n<td>isgraph(char)</td>\n<td>当c不是空格但可打印时为真</td>\n</tr>\n<tr>\n<td>islower(char)</td>\n<td>当c是小写字母时为真</td>\n</tr>\n<tr>\n<td>isprint(char)</td>\n<td>当c是可打印字符时为真</td>\n</tr>\n<tr>\n<td>ispunct(char)</td>\n<td>当c是标点符号时为真</td>\n</tr>\n<tr>\n<td>isspace(char)</td>\n<td>当c是空白时为真</td>\n</tr>\n<tr>\n<td>isupper(char)</td>\n<td>当c是大写字母时为真</td>\n</tr>\n<tr>\n<td>isxdigit(char)</td>\n<td>当c是十六进制时为真</td>\n</tr>\n</tbody></table>\n<h2 id=\"字符转换函数\">字符转换函数</h2>\n<table>\n<thead>\n<tr>\n<th>函数</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>tolower</td>\n<td>将字母转换为小写返回</td>\n</tr>\n<tr>\n<td>toupper</td>\n<td>将字母转换为大写返回</td>\n</tr>\n</tbody></table>\n<h2 id=\"注意\">注意</h2>\n<p>其中：\n-isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属于a<del>z||A</del>Z||0~9\n-isalpha遇到大写字母输出1，遇到小写输出2</p>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\nint main()\n{\n    cout&lt;&lt;isalpha(&#39;N&#39;)&lt;&lt;endl; //输出1\n    cout&lt;&lt;isalpha(&#39;n&#39;)&lt;&lt;endl; //输出2\n    return 0;\n}\n</code></pre>\n<h2 id=\"参考\">参考</h2>\n<blockquote>\n<p><a href=\"https://blog.csdn.net/gyysmall/article/details/12650937\">https://blog.csdn.net/gyysmall/article/details/12650937</a>\n<a href=\"https://blog.csdn.net/q302989778/article/details/90215213\">https://blog.csdn.net/q302989778/article/details/90215213</a>\n<a href=\"https://www.cnblogs.com/r1-12king/p/13161762.html\">https://www.cnblogs.com/r1-12king/p/13161762.html</a></p>\n</blockquote>\n",
