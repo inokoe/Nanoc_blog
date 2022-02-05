@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Nanoc",
     "description": "",
-    "home_page_url": "https://inokoe.github.io/Nanoc_blog",
-    "feed_url": "https://inokoe.github.io/Nanoc_blog/feed.json",
+    "home_page_url": "https://blog.nanoc.work",
+    "feed_url": "https://blog.nanoc.work/feed.json",
     "user_comment": "",
     "author": {
         "name": "Nanoc"
     },
     "items": [
         {
-            "id": "https://inokoe.github.io/Nanoc_blog/bitset-yong-fa/",
-            "url": "https://inokoe.github.io/Nanoc_blog/bitset-yong-fa/",
+            "id": "https://blog.nanoc.work/bitset-yong-fa/",
+            "url": "https://blog.nanoc.work/bitset-yong-fa/",
             "title": "Bitset 用法",
             "summary": "bitset C++的 bitset 在 bitset 头文件中，它是一种类似数组的结构，它的每一个元素只能是０或１，每个元素仅用１bit空间。 bitset&lt;4&gt; bitset1; //无参构造，长度为４，默认每一位为０ bitset&lt;8&gt; bitset2(12); //长度为８，二进制保存，前面用０补充 string z = &quot;100101&quot;; bitset&lt;10&gt; bitset3(z); //长度为10，前面用０补充 char s2[] = &quot;10101&quot;; bitset&lt;13&gt; bitset4(s2); //长度为13，前面用０补充 cout &lt;&lt; bitset1 &lt;&lt; endl; //0000 cout &lt;&lt; bitset2 &lt;&lt; endl; //00001100 cout &lt;&lt; bitset3 &lt;&lt; endl; //0000100101 cout&hellip;",
             "content_html": "<h2 id=\"bitset\">bitset</h2>\n<p>C++的 bitset 在 bitset 头文件中，它是一种类似数组的结构，它的每一个元素只能是０或１，每个元素仅用１bit空间。</p>\n<!--more-->\n\n\n<pre><code class=\"language-cpp\">    bitset&lt;4&gt; bitset1; //无参构造，长度为４，默认每一位为０\n\n    bitset&lt;8&gt; bitset2(12); //长度为８，二进制保存，前面用０补充\n\n    string z = &quot;100101&quot;;\n    bitset&lt;10&gt; bitset3(z); //长度为10，前面用０补充\n\n    char s2[] = &quot;10101&quot;;\n    bitset&lt;13&gt; bitset4(s2); //长度为13，前面用０补充\n\n    cout &lt;&lt; bitset1 &lt;&lt; endl; //0000\n    cout &lt;&lt; bitset2 &lt;&lt; endl; //00001100\n    cout &lt;&lt; bitset3 &lt;&lt; endl; //0000100101\n    cout &lt;&lt; bitset4 &lt;&lt; endl; //0000000010101\n    bitset&lt;2&gt; bitset1(12);     //12的二进制为1100（长度为４），但bitset1的size=2，只取后面部分，即00\n\n    string x = &quot;100101&quot;;\n    bitset&lt;4&gt; bitset2(x); //x的size=6，而bitset的size=4，只取前面部分，即1001\n\n    char s2[] = &quot;11101&quot;;\n    bitset&lt;4&gt; bitset3(s2); //与bitset2同理，只取前面部分，即1110\n\n    cout &lt;&lt; bitset1 &lt;&lt; endl; //00\n    cout &lt;&lt; bitset2 &lt;&lt; endl; //1001\n    cout &lt;&lt; bitset3 &lt;&lt; endl; //1110\n\n    bitset&lt;8&gt; foo(&quot;10011011&quot;);\n    string s = foo.to_string();\n    //将bitset转换成string类型\n    unsigned long a = foo.to_ulong();        //将bitset转换成unsigned long类型\n    unsigned long long b = foo.to_ullong(); //将bitset转换成unsigned long long类型\n    cout &lt;&lt; s &lt;&lt; endl;                        //10011011\n    cout &lt;&lt; a &lt;&lt; endl;                        //155\n    cout &lt;&lt; b &lt;&lt; endl;                        //155\n</code></pre>\n<blockquote>\n<p><a href=\"https://www.cnblogs.com/magisk/p/8809922.html\">https://www.cnblogs.com/magisk/p/8809922.html</a></p>\n</blockquote>\n",

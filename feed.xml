@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Nanoc</title>
-    <link href="https://inokoe.github.io/Nanoc_blog/feed.xml" rel="self" />
-    <link href="https://inokoe.github.io/Nanoc_blog" />
+    <link href="https://blog.nanoc.work/feed.xml" rel="self" />
+    <link href="https://blog.nanoc.work" />
     <updated>2022-02-05T17:57:55+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
-    <id>https://inokoe.github.io/Nanoc_blog</id>
+    <id>https://blog.nanoc.work</id>
 
     <entry>
         <title>Bitset 用法</title>
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://inokoe.github.io/Nanoc_blog/bitset-yong-fa/"/>
-        <id>https://inokoe.github.io/Nanoc_blog/bitset-yong-fa/</id>
+        <link href="https://blog.nanoc.work/bitset-yong-fa/"/>
+        <id>https://blog.nanoc.work/bitset-yong-fa/</id>
             <category term="C++"/>
 
         <updated>2022-02-05T17:57:55+08:00</updated>
