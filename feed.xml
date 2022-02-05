@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Nanoc</title>
+    <link href="https://inokoe.github.io/Nanoc_blog/feed.xml" rel="self" />
+    <link href="https://inokoe.github.io/Nanoc_blog" />
+    <updated>2022-02-04T23:30:14+08:00</updated>
+    <author>
+        <name>nanoc</name>
+    </author>
+    <id>https://inokoe.github.io/Nanoc_blog</id>
+
+    <entry>
+        <title>title</title>
+        <author>
+            <name>nanoc</name>
+        </author>
+        <link href="https://inokoe.github.io/Nanoc_blog/title/"/>
+        <id>https://inokoe.github.io/Nanoc_blog/title/</id>
+
+        <updated>2022-02-04T23:30:14+08:00</updated>
+            <summary>
+                <![CDATA[
+                    #fwqoiwh 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>#fwqoiwh</p>
+
+            ]]>
+        </content>
+    </entry>
+</feed>

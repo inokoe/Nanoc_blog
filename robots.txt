@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://inokoe.github.io/Nanoc_blog/sitemap.xml
