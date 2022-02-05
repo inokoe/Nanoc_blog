@@ -3,73 +3,82 @@
     <title>Nanoc</title>
     <link href="https://blog.nanoc.work/feed.xml" rel="self" />
     <link href="https://blog.nanoc.work" />
-    <updated>2022-02-05T17:57:55+08:00</updated>
+    <updated>2022-02-05T19:23:51+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://blog.nanoc.work</id>
 
     <entry>
-        <title>Bitset 用法</title>
+        <title>Cpp Bitset </title>
         <author>
             <name>Nanoc</name>
         </author>
-        <link href="https://blog.nanoc.work/bitset-yong-fa/"/>
-        <id>https://blog.nanoc.work/bitset-yong-fa/</id>
+        <link href="https://blog.nanoc.work/cpp-bitset/"/>
+        <id>https://blog.nanoc.work/cpp-bitset/</id>
             <category term="C++"/>
 
-        <updated>2022-02-05T17:57:55+08:00</updated>
+        <updated>2022-02-05T19:23:51+08:00</updated>
             <summary>
                 <![CDATA[
-                    bitset C++的 bitset 在 bitset 头文件中，它是一种类似数组的结构，它的每一个元素只能是０或１，每个元素仅用１bit空间。 bitset&lt;4&gt; bitset1; //无参构造，长度为４，默认每一位为０ bitset&lt;8&gt; bitset2(12); //长度为８，二进制保存，前面用０补充 string z = &quot;100101&quot;; bitset&lt;10&gt; bitset3(z); //长度为10，前面用０补充 char s2[] = &quot;10101&quot;; bitset&lt;13&gt; bitset4(s2); //长度为13，前面用０补充 cout &lt;&lt; bitset1 &lt;&lt; endl; //0000 cout &lt;&lt; bitset2 &lt;&lt; endl; //00001100 cout &lt;&lt; bitset3 &lt;&lt; endl; //0000100101 cout&hellip;
+                        <img src="https://blog.nanoc.work/media/posts/147/1.png" alt="" />
+                     Bitset C++的 bitset 在 bitset 头文件中，它是一种类似数组的结构，它的每一个元素只能是０或１，每个元素仅用１bit空间。 bitset&lt;4&gt; bitset1; //无参构造，长度为４，默认每一位为０ bitset&lt;8&gt; bitset2(12); //长度为８，二进制保存，前面用０补充 string z = "100101"; bitset&lt;10&gt; bitset3(z); //长度为10，前面用０补充 char s2[] = "10101"; bitset&lt;13&gt; bitset4(s2); //长度为13，前面用０补充 cout &lt;&lt; bitset1 &lt;&lt; endl; //0000 cout &lt;&lt; bitset2 &lt;&lt; endl; //00001100 cout &lt;&lt; bitset3 &lt;&lt; endl; //0000100101&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <h2 id="bitset">bitset</h2>
-<p>C++的 bitset 在 bitset 头文件中，它是一种类似数组的结构，它的每一个元素只能是０或１，每个元素仅用１bit空间。</p>
-<!--more-->
+                    <img src="https://blog.nanoc.work/media/posts/147/1.png" alt="" />
+                
+    <h2 id="bitset">
+      Bitset
+    </h2>
 
+  <p>
+    C++的 bitset 在 bitset 头文件中，它是一种类似数组的结构，它的每一个元素只能是０或１，每个元素仅用１bit空间。
+  </p>
+<pre class="line-numbers  language-html"><code> bitset&lt;4&gt; bitset1; 
+ //无参构造，长度为４，默认每一位为０
 
-<pre><code class="language-cpp">    bitset&lt;4&gt; bitset1; //无参构造，长度为４，默认每一位为０
+ bitset&lt;8&gt; bitset2(12); 
+ //长度为８，二进制保存，前面用０补充
 
-    bitset&lt;8&gt; bitset2(12); //长度为８，二进制保存，前面用０补充
+ string z = "100101";
+ bitset&lt;10&gt; bitset3(z); 
+ //长度为10，前面用０补充
 
-    string z = &quot;100101&quot;;
-    bitset&lt;10&gt; bitset3(z); //长度为10，前面用０补充
+ char s2[] = "10101";
+ bitset&lt;13&gt; bitset4(s2); 
+ //长度为13，前面用０补充
 
-    char s2[] = &quot;10101&quot;;
-    bitset&lt;13&gt; bitset4(s2); //长度为13，前面用０补充
+ cout &lt;&lt; bitset1 &lt;&lt; endl; //0000
+ cout &lt;&lt; bitset2 &lt;&lt; endl; //00001100
+ cout &lt;&lt; bitset3 &lt;&lt; endl; //0000100101
+ cout &lt;&lt; bitset4 &lt;&lt; endl; //0000000010101
+ bitset&lt;2&gt; bitset1(12);  
+ //12的二进制为1100（长度为４），但bitset1的size=2，只取后面部分，即00
 
-    cout &lt;&lt; bitset1 &lt;&lt; endl; //0000
-    cout &lt;&lt; bitset2 &lt;&lt; endl; //00001100
-    cout &lt;&lt; bitset3 &lt;&lt; endl; //0000100101
-    cout &lt;&lt; bitset4 &lt;&lt; endl; //0000000010101
-    bitset&lt;2&gt; bitset1(12);     //12的二进制为1100（长度为４），但bitset1的size=2，只取后面部分，即00
+ string x = "100101";
+ bitset&lt;4&gt; bitset2(x); 
+ //x的size=6，而bitset的size=4，只取前面部分，即1001
 
-    string x = &quot;100101&quot;;
-    bitset&lt;4&gt; bitset2(x); //x的size=6，而bitset的size=4，只取前面部分，即1001
+ char s2[] = "11101";
+ bitset&lt;4&gt; bitset3(s2); 
+ //与bitset2同理，只取前面部分，即1110
 
-    char s2[] = &quot;11101&quot;;
-    bitset&lt;4&gt; bitset3(s2); //与bitset2同理，只取前面部分，即1110
+ cout &lt;&lt; bitset1 &lt;&lt; endl; //00
+ cout &lt;&lt; bitset2 &lt;&lt; endl; //1001
+ cout &lt;&lt; bitset3 &lt;&lt; endl; //1110
 
-    cout &lt;&lt; bitset1 &lt;&lt; endl; //00
-    cout &lt;&lt; bitset2 &lt;&lt; endl; //1001
-    cout &lt;&lt; bitset3 &lt;&lt; endl; //1110
-
-    bitset&lt;8&gt; foo(&quot;10011011&quot;);
-    string s = foo.to_string();
-    //将bitset转换成string类型
-    unsigned long a = foo.to_ulong();        //将bitset转换成unsigned long类型
-    unsigned long long b = foo.to_ullong(); //将bitset转换成unsigned long long类型
-    cout &lt;&lt; s &lt;&lt; endl;                        //10011011
-    cout &lt;&lt; a &lt;&lt; endl;                        //155
-    cout &lt;&lt; b &lt;&lt; endl;                        //155
-</code></pre>
-<blockquote>
-<p><a href="https://www.cnblogs.com/magisk/p/8809922.html">https://www.cnblogs.com/magisk/p/8809922.html</a></p>
-</blockquote>
-
+ bitset&lt;8&gt; foo("10011011");
+ string s = foo.to_string();
+ //将bitset转换成string类型
+ unsigned long a = foo.to_ulong();  
+ //将bitset转换成unsigned long类型
+ unsigned long long b = foo.to_ullong(); 
+ //将bitset转换成unsigned long long类型
+ cout &lt;&lt; s &lt;&lt; endl; //10011011
+ cout &lt;&lt; a &lt;&lt; endl; //155
+ cout &lt;&lt; b &lt;&lt; endl; //155</code></pre>
             ]]>
         </content>
     </entry>
