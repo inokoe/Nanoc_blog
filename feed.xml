@@ -3,7 +3,7 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-06T22:52:32+08:00</updated>
+    <updated>2022-02-06T22:54:47+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
@@ -47,7 +47,7 @@ vhost中包含了不同站点Nginx的配置文件</p>
         <id>https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/</id>
             <category term="Linux"/>
 
-        <updated>2022-02-06T22:52:25+08:00</updated>
+        <updated>2022-02-06T22:54:47+08:00</updated>
             <summary>
                 <![CDATA[
                     用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好 以下将列举我所使用过的几个产品。 国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS 
@@ -63,6 +63,8 @@ vhost中包含了不同站点Nginx的配置文件</p>
 <li>隐藏了部分技术细节对新手友好
 以下将列举我所使用过的几个产品。</li>
 </ul>
+<!-- more -->
+
 <h2 id="国内">国内</h2>
 <table>
 <thead>
