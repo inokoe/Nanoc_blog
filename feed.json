@@ -10,18 +10,34 @@
     },
     "items": [
         {
-            "id": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
-            "url": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
-            "title": "Linux 服务器面板汇总",
-            "summary": "用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS ",
-            "content_html": "<h2 id=\"用途\">用途</h2>\n<p>这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。</p>\n<ul>\n<li>快速部署LNMP、LAMP</li>\n<li>提供 Let’s Encrypt 证书或自由证书启用HTTPS</li>\n<li>隐藏了部分技术细节对新手友好<h2 id=\"国内\">国内</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>宝塔</td>\n<td>为Python所编写，提供免费版，适合所有人</td>\n</tr>\n<tr>\n<td>AMH面板</td>\n<td>起始2011年，但UI较难懂，适合具有一定经验</td>\n</tr>\n</tbody></table>\n<h2 id=\"国外\">国外</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>cyberpanel</td>\n<td>使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验</td>\n</tr>\n<tr>\n<td>Vesta</td>\n<td>提供LNMP、LAMP，邮箱，DNS</td>\n</tr>\n</tbody></table>\n</li>\n</ul>\n",
+            "id": "https://nanoc.work/amhmian-ban-lu-jing/",
+            "url": "https://nanoc.work/amhmian-ban-lu-jing/",
+            "title": "AMH面板路径",
+            "summary": "Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin ",
+            "content_html": "<h2 id=\"python连接数据库\">Python连接数据库</h2>\n<p>路径位于/tmp/mysql*.sock\n例：unix_socket=’/tmp/mysql-5.6.sock’</p>\n<h2 id=\"运行环境配置路径\">运行环境配置路径</h2>\n<p>/home/wwwroot/\nvhost中包含了不同站点Nginx的配置文件</p>\n<h2 id=\"软件配置\">软件配置</h2>\n<p>/usr/local/bin</p>\n",
             "author": {
                 "name": "Nanoc"
             },
             "tags": [
+                   "Linux"
+            ],
+            "date_published": "2022-02-06T22:52:15+08:00",
+            "date_modified": "2022-02-06T22:52:32+08:00"
+        },
+        {
+            "id": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
+            "url": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
+            "title": "Linux 服务器面板汇总",
+            "summary": "用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好 以下将列举我所使用过的几个产品。 国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS ",
+            "content_html": "<h2 id=\"用途\">用途</h2>\n<p>这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。</p>\n<ul>\n<li>快速部署LNMP、LAMP</li>\n<li>提供 Let’s Encrypt 证书或自由证书启用HTTPS</li>\n<li>隐藏了部分技术细节对新手友好\n以下将列举我所使用过的几个产品。</li>\n</ul>\n<h2 id=\"国内\">国内</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>宝塔</td>\n<td>为Python所编写，提供免费版，适合所有人</td>\n</tr>\n<tr>\n<td>AMH面板</td>\n<td>起始2011年，但UI较难懂，适合具有一定经验</td>\n</tr>\n</tbody></table>\n<h2 id=\"国外\">国外</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>cyberpanel</td>\n<td>使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验</td>\n</tr>\n<tr>\n<td>Vesta</td>\n<td>提供LNMP、LAMP，邮箱，DNS</td>\n</tr>\n</tbody></table>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Linux"
             ],
             "date_published": "2022-02-06T22:09:21+08:00",
-            "date_modified": "2022-02-06T22:09:21+08:00"
+            "date_modified": "2022-02-06T22:52:25+08:00"
         },
         {
             "id": "https://nanoc.work/python-useragent-ku/",
@@ -143,21 +159,6 @@
             ],
             "date_published": "2022-02-05T20:04:19+08:00",
             "date_modified": "2022-02-05T20:04:19+08:00"
-        },
-        {
-            "id": "https://nanoc.work/c-stl-next_permutation/",
-            "url": "https://nanoc.work/c-stl-next_permutation/",
-            "title": "C++ STL next_permutation",
-            "summary": "字典序全排列 举例 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { int a[4]={1,2,3,4}; sort(a,a+4); //数组元素顺序将被改变，直到无法继续排序 do{ cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;&lt;&lt;a[3]&lt;&lt;endl; }while(next_permutation(a,a+4)); return 0; } 找到第99个排列序 #include &lt;bits/stdc++.h&gt; using namespace std; int a[7]={1,2,3,4,5,6,7}; int n=0; int main() { sort(a,a+7); do{ if(n==99){ for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;; cout&lt;&lt;endl; break; }&hellip;",
-            "content_html": "<h2 id=\"字典序全排列\">字典序全排列</h2>\n<p>举例</p>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n \nint main() {\n    int a[4]={1,2,3,4};\n    sort(a,a+4);\n    //数组元素顺序将被改变，直到无法继续排序\n    do{\n        cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;&lt;&lt;a[3]&lt;&lt;endl;\n    }while(next_permutation(a,a+4));\n    return 0;\n}\n</code></pre>\n<p>找到第99个排列序</p>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\nint a[7]={1,2,3,4,5,6,7};\nint n=0;\nint main() {\n    sort(a,a+7); \n    do{\n        if(n==99){\n            for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;;\n            cout&lt;&lt;endl;\n            break;\n        }\n        n++;\n    }while(next_permutation(a,a+7));\n\n    sort(a,a+7);\n\n    for(int i = 1 ; next_permutation(a,a+7);i++){\n        if(i==99){\n            for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;;\n            break;\n        }\n    }\n    return 0;\n}\n</code></pre>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "C++"
-            ],
-            "date_published": "2022-02-05T20:04:00+08:00",
-            "date_modified": "2022-02-05T20:04:00+08:00"
         }
     ]
 }

@@ -3,12 +3,41 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-06T22:09:21+08:00</updated>
+    <updated>2022-02-06T22:52:32+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>AMH面板路径</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/amhmian-ban-lu-jing/"/>
+        <id>https://nanoc.work/amhmian-ban-lu-jing/</id>
+            <category term="Linux"/>
+
+        <updated>2022-02-06T22:52:32+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="python连接数据库">Python连接数据库</h2>
+<p>路径位于/tmp/mysql*.sock
+例：unix_socket=’/tmp/mysql-5.6.sock’</p>
+<h2 id="运行环境配置路径">运行环境配置路径</h2>
+<p>/home/wwwroot/
+vhost中包含了不同站点Nginx的配置文件</p>
+<h2 id="软件配置">软件配置</h2>
+<p>/usr/local/bin</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Linux 服务器面板汇总</title>
         <author>
@@ -16,11 +45,12 @@
         </author>
         <link href="https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/"/>
         <id>https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/</id>
+            <category term="Linux"/>
 
-        <updated>2022-02-06T22:09:21+08:00</updated>
+        <updated>2022-02-06T22:52:25+08:00</updated>
             <summary>
                 <![CDATA[
-                    用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS 
+                    用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好 以下将列举我所使用过的几个产品。 国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS 
                 ]]>
             </summary>
         <content type="html">
@@ -30,7 +60,10 @@
 <ul>
 <li>快速部署LNMP、LAMP</li>
 <li>提供 Let’s Encrypt 证书或自由证书启用HTTPS</li>
-<li>隐藏了部分技术细节对新手友好<h2 id="国内">国内</h2>
+<li>隐藏了部分技术细节对新手友好
+以下将列举我所使用过的几个产品。</li>
+</ul>
+<h2 id="国内">国内</h2>
 <table>
 <thead>
 <tr>
@@ -64,8 +97,6 @@
 <td>提供LNMP、LAMP，邮箱，DNS</td>
 </tr>
 </tbody></table>
-</li>
-</ul>
 
             ]]>
         </content>
@@ -464,69 +495,6 @@ int main()
     x = sts.str();
     cout&lt;&lt;x&lt;&lt;endl;
 
-    return 0;
-}
-</code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>C++ STL next_permutation</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/c-stl-next_permutation/"/>
-        <id>https://nanoc.work/c-stl-next_permutation/</id>
-            <category term="C++"/>
-
-        <updated>2022-02-05T20:04:00+08:00</updated>
-            <summary>
-                <![CDATA[
-                    字典序全排列 举例 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { int a[4]={1,2,3,4}; sort(a,a+4); //数组元素顺序将被改变，直到无法继续排序 do{ cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;&lt;&lt;a[3]&lt;&lt;endl; }while(next_permutation(a,a+4)); return 0; } 找到第99个排列序 #include &lt;bits/stdc++.h&gt; using namespace std; int a[7]={1,2,3,4,5,6,7}; int n=0; int main() { sort(a,a+7); do{ if(n==99){ for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;; cout&lt;&lt;endl; break; }&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="字典序全排列">字典序全排列</h2>
-<p>举例</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
- 
-int main() {
-    int a[4]={1,2,3,4};
-    sort(a,a+4);
-    //数组元素顺序将被改变，直到无法继续排序
-    do{
-        cout&lt;&lt;a[0]&lt;&lt;&quot; &quot;&lt;&lt;a[1]&lt;&lt;&quot; &quot;&lt;&lt;a[2]&lt;&lt;&quot; &quot;&lt;&lt;a[3]&lt;&lt;endl;
-    }while(next_permutation(a,a+4));
-    return 0;
-}
-</code></pre>
-<p>找到第99个排列序</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-int a[7]={1,2,3,4,5,6,7};
-int n=0;
-int main() {
-    sort(a,a+7); 
-    do{
-        if(n==99){
-            for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;;
-            cout&lt;&lt;endl;
-            break;
-        }
-        n++;
-    }while(next_permutation(a,a+7));
-
-    sort(a,a+7);
-
-    for(int i = 1 ; next_permutation(a,a+7);i++){
-        if(i==99){
-            for(int i=0;i&lt;7;i++)cout&lt;&lt;a[i]&lt;&lt;&#39; &#39;;
-            break;
-        }
-    }
     return 0;
 }
 </code></pre>
