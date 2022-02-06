@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/linuxgeng-huan-dns/",
+            "url": "https://nanoc.work/linuxgeng-huan-dns/",
+            "title": "Linux更换DNS",
+            "summary": "echo -e &quot;options timeout:1 attempts:1 rotate\\nnameserver 8.8.8.8\\nnameserver 114.114.114.114&quot; &gt;/etc/resolv.conf; ",
+            "content_html": "<pre><code class=\"language-shell\">echo -e &quot;options timeout:1 attempts:1 rotate\\nnameserver 8.8.8.8\\nnameserver 114.114.114.114&quot; &gt;/etc/resolv.conf;\n</code></pre>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Linux"
+            ],
+            "date_published": "2022-02-06T13:57:16+08:00",
+            "date_modified": "2022-02-06T13:57:16+08:00"
+        },
+        {
             "id": "https://nanoc.work/shi-jian-xian-fen-ge-fu/",
             "url": "https://nanoc.work/shi-jian-xian-fen-ge-fu/",
             "title": "时间线分隔符",
@@ -144,21 +159,6 @@
             ],
             "date_published": "2022-02-05T20:02:40+08:00",
             "date_modified": "2022-02-05T20:02:40+08:00"
-        },
-        {
-            "id": "https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/",
-            "url": "https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/",
-            "title": "C++判断是否为数字或字母",
-            "summary": "声明头文件 cctype（字符处理库）中定义了有关字符判断与处理的库函数。 # include &lt;cctype&gt; 相关函数 函数 描述 isalnum(char) 当c是字母或者数字时为真 isalpha(char) 当c是字母时为真 iscntrl(char) 当c是控制字符时为真 isdigit(char) 当c是数字时为真 isgraph(char) 当c不是空格但可打印时为真 islower(char) 当c是小写字母时为真 isprint(char) 当c是可打印字符时为真 ispunct(char) 当c是标点符号时为真 isspace(char) 当c是空白时为真 isupper(char) 当c是大写字母时为真 isxdigit(char) 当c是十六进制时为真 字符转换函数 函数 描述 tolower 将字母转换为小写返回 toupper 将字母转换为大写返回 注意 其中： -isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属于az||AZ||0~9 -isalpha遇到大写字母输出1，遇到小写输出2 #include &lt;bits/stdc++.h&gt; using namespace&hellip;",
-            "content_html": "<h2 id=\"声明头文件\">声明头文件</h2>\n<p>cctype（字符处理库）中定义了有关字符判断与处理的库函数。</p>\n<pre><code class=\"language-cpp\"># include &lt;cctype&gt;\n</code></pre>\n<h2 id=\"相关函数\">相关函数</h2>\n<table>\n<thead>\n<tr>\n<th>函数</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>isalnum(char)</td>\n<td>当c是字母或者数字时为真</td>\n</tr>\n<tr>\n<td>isalpha(char)</td>\n<td>当c是字母时为真</td>\n</tr>\n<tr>\n<td>iscntrl(char)</td>\n<td>当c是控制字符时为真</td>\n</tr>\n<tr>\n<td>isdigit(char)</td>\n<td>当c是数字时为真</td>\n</tr>\n<tr>\n<td>isgraph(char)</td>\n<td>当c不是空格但可打印时为真</td>\n</tr>\n<tr>\n<td>islower(char)</td>\n<td>当c是小写字母时为真</td>\n</tr>\n<tr>\n<td>isprint(char)</td>\n<td>当c是可打印字符时为真</td>\n</tr>\n<tr>\n<td>ispunct(char)</td>\n<td>当c是标点符号时为真</td>\n</tr>\n<tr>\n<td>isspace(char)</td>\n<td>当c是空白时为真</td>\n</tr>\n<tr>\n<td>isupper(char)</td>\n<td>当c是大写字母时为真</td>\n</tr>\n<tr>\n<td>isxdigit(char)</td>\n<td>当c是十六进制时为真</td>\n</tr>\n</tbody></table>\n<h2 id=\"字符转换函数\">字符转换函数</h2>\n<table>\n<thead>\n<tr>\n<th>函数</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>tolower</td>\n<td>将字母转换为小写返回</td>\n</tr>\n<tr>\n<td>toupper</td>\n<td>将字母转换为大写返回</td>\n</tr>\n</tbody></table>\n<h2 id=\"注意\">注意</h2>\n<p>其中：\n-isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属于a<del>z||A</del>Z||0~9\n-isalpha遇到大写字母输出1，遇到小写输出2</p>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\nint main()\n{\n    cout&lt;&lt;isalpha(&#39;N&#39;)&lt;&lt;endl; //输出1\n    cout&lt;&lt;isalpha(&#39;n&#39;)&lt;&lt;endl; //输出2\n    return 0;\n}\n</code></pre>\n<h2 id=\"参考\">参考</h2>\n<blockquote>\n<p><a href=\"https://blog.csdn.net/gyysmall/article/details/12650937\">https://blog.csdn.net/gyysmall/article/details/12650937</a>\n<a href=\"https://blog.csdn.net/q302989778/article/details/90215213\">https://blog.csdn.net/q302989778/article/details/90215213</a>\n<a href=\"https://www.cnblogs.com/r1-12king/p/13161762.html\">https://www.cnblogs.com/r1-12king/p/13161762.html</a></p>\n</blockquote>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "C++"
-            ],
-            "date_published": "2022-02-05T20:02:09+08:00",
-            "date_modified": "2022-02-05T20:02:09+08:00"
         }
     ]
 }

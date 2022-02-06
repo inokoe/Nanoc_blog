@@ -3,12 +3,35 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-05T20:21:20+08:00</updated>
+    <updated>2022-02-06T13:57:16+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Linux更换DNS</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/linuxgeng-huan-dns/"/>
+        <id>https://nanoc.work/linuxgeng-huan-dns/</id>
+            <category term="Linux"/>
+
+        <updated>2022-02-06T13:57:16+08:00</updated>
+            <summary>
+                <![CDATA[
+                    echo -e &quot;options timeout:1 attempts:1 rotate\nnameserver 8.8.8.8\nnameserver 114.114.114.114&quot; &gt;/etc/resolv.conf; 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <pre><code class="language-shell">echo -e &quot;options timeout:1 attempts:1 rotate\nnameserver 8.8.8.8\nnameserver 114.114.114.114&quot; &gt;/etc/resolv.conf;
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>时间线分隔符</title>
         <author>
@@ -477,120 +500,6 @@ RewriteRule ^(.*)$ /index.php/$1 [L]
 <p>接着去Typecho后台也开启静态化。</p>
 <h2 id="注意">注意</h2>
 <p>有多种规则写法</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>C++判断是否为数字或字母</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/"/>
-        <id>https://nanoc.work/cpan-duan-shi-fou-wei-shu-zi-huo-zi-mu/</id>
-            <category term="C++"/>
-
-        <updated>2022-02-05T20:02:09+08:00</updated>
-            <summary>
-                <![CDATA[
-                    声明头文件 cctype（字符处理库）中定义了有关字符判断与处理的库函数。 # include &lt;cctype&gt; 相关函数 函数 描述 isalnum(char) 当c是字母或者数字时为真 isalpha(char) 当c是字母时为真 iscntrl(char) 当c是控制字符时为真 isdigit(char) 当c是数字时为真 isgraph(char) 当c不是空格但可打印时为真 islower(char) 当c是小写字母时为真 isprint(char) 当c是可打印字符时为真 ispunct(char) 当c是标点符号时为真 isspace(char) 当c是空白时为真 isupper(char) 当c是大写字母时为真 isxdigit(char) 当c是十六进制时为真 字符转换函数 函数 描述 tolower 将字母转换为小写返回 toupper 将字母转换为大写返回 注意 其中： -isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属于az||AZ||0~9 -isalpha遇到大写字母输出1，遇到小写输出2 #include &lt;bits/stdc++.h&gt; using namespace&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="声明头文件">声明头文件</h2>
-<p>cctype（字符处理库）中定义了有关字符判断与处理的库函数。</p>
-<pre><code class="language-cpp"># include &lt;cctype&gt;
-</code></pre>
-<h2 id="相关函数">相关函数</h2>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>isalnum(char)</td>
-<td>当c是字母或者数字时为真</td>
-</tr>
-<tr>
-<td>isalpha(char)</td>
-<td>当c是字母时为真</td>
-</tr>
-<tr>
-<td>iscntrl(char)</td>
-<td>当c是控制字符时为真</td>
-</tr>
-<tr>
-<td>isdigit(char)</td>
-<td>当c是数字时为真</td>
-</tr>
-<tr>
-<td>isgraph(char)</td>
-<td>当c不是空格但可打印时为真</td>
-</tr>
-<tr>
-<td>islower(char)</td>
-<td>当c是小写字母时为真</td>
-</tr>
-<tr>
-<td>isprint(char)</td>
-<td>当c是可打印字符时为真</td>
-</tr>
-<tr>
-<td>ispunct(char)</td>
-<td>当c是标点符号时为真</td>
-</tr>
-<tr>
-<td>isspace(char)</td>
-<td>当c是空白时为真</td>
-</tr>
-<tr>
-<td>isupper(char)</td>
-<td>当c是大写字母时为真</td>
-</tr>
-<tr>
-<td>isxdigit(char)</td>
-<td>当c是十六进制时为真</td>
-</tr>
-</tbody></table>
-<h2 id="字符转换函数">字符转换函数</h2>
-<table>
-<thead>
-<tr>
-<th>函数</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>tolower</td>
-<td>将字母转换为小写返回</td>
-</tr>
-<tr>
-<td>toupper</td>
-<td>将字母转换为大写返回</td>
-</tr>
-</tbody></table>
-<h2 id="注意">注意</h2>
-<p>其中：
--isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属于a<del>z||A</del>Z||0~9
--isalpha遇到大写字母输出1，遇到小写输出2</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-int main()
-{
-    cout&lt;&lt;isalpha(&#39;N&#39;)&lt;&lt;endl; //输出1
-    cout&lt;&lt;isalpha(&#39;n&#39;)&lt;&lt;endl; //输出2
-    return 0;
-}
-</code></pre>
-<h2 id="参考">参考</h2>
-<blockquote>
-<p><a href="https://blog.csdn.net/gyysmall/article/details/12650937">https://blog.csdn.net/gyysmall/article/details/12650937</a>
-<a href="https://blog.csdn.net/q302989778/article/details/90215213">https://blog.csdn.net/q302989778/article/details/90215213</a>
-<a href="https://www.cnblogs.com/r1-12king/p/13161762.html">https://www.cnblogs.com/r1-12king/p/13161762.html</a></p>
-</blockquote>
 
             ]]>
         </content>
