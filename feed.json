@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
+            "url": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
+            "title": "Linux 服务器面板汇总",
+            "summary": "用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS ",
+            "content_html": "<h2 id=\"用途\">用途</h2>\n<p>这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。</p>\n<ul>\n<li>快速部署LNMP、LAMP</li>\n<li>提供 Let’s Encrypt 证书或自由证书启用HTTPS</li>\n<li>隐藏了部分技术细节对新手友好<h2 id=\"国内\">国内</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>宝塔</td>\n<td>为Python所编写，提供免费版，适合所有人</td>\n</tr>\n<tr>\n<td>AMH面板</td>\n<td>起始2011年，但UI较难懂，适合具有一定经验</td>\n</tr>\n</tbody></table>\n<h2 id=\"国外\">国外</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>cyberpanel</td>\n<td>使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验</td>\n</tr>\n<tr>\n<td>Vesta</td>\n<td>提供LNMP、LAMP，邮箱，DNS</td>\n</tr>\n</tbody></table>\n</li>\n</ul>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-06T22:09:21+08:00",
+            "date_modified": "2022-02-06T22:09:21+08:00"
+        },
+        {
             "id": "https://nanoc.work/python-useragent-ku/",
             "url": "https://nanoc.work/python-useragent-ku/",
             "title": "Python UserAgent 库",
@@ -144,21 +158,6 @@
             ],
             "date_published": "2022-02-05T20:04:00+08:00",
             "date_modified": "2022-02-05T20:04:00+08:00"
-        },
-        {
-            "id": "https://nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/",
-            "url": "https://nanoc.work/ucm-ucsi-acpi-zhuang-tai-ma-43/",
-            "title": "UCM-UCSI ACPI 状态码 43",
-            "summary": "UCM-UCSI ACPI 此驱动用于Windows Type-C 接口相关功能，在设备管理中此驱动出现黄色感叹号，并状态43。 受此影响，电脑可能会出现一些异常，如无法PD充电。 Windows特定的系统版本或补丁以及BIOS更新导致的故障。 重置BIOS，笔记本未插电状态关机，并尽可能长按电源键使其开机，并强制断电以强制BIOS重新设置。 如果不适用此方法，请移至Google进行查询，有很多解决办法，但主要跟特定的机器相关。 ",
-            "content_html": "<h2 id=\"ucm-ucsi-acpi\">UCM-UCSI ACPI</h2>\n<p>此驱动用于Windows Type-C 接口相关功能，在设备管理中此驱动出现黄色感叹号，并状态43。\n受此影响，电脑可能会出现一些异常，如无法PD充电。</p>\n<h2 id=\"产生原因\">产生原因</h2>\n<p>Windows特定的系统版本或补丁以及BIOS更新导致的故障。</p>\n<h2 id=\"解决方法\">解决方法</h2>\n<p>重置BIOS，笔记本未插电状态关机，并尽可能长按电源键使其开机，并强制断电以强制BIOS重新设置。\n如果不适用此方法，请移至Google进行查询，有很多解决办法，但主要跟特定的机器相关。</p>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Windows"
-            ],
-            "date_published": "2022-02-05T20:03:36+08:00",
-            "date_modified": "2022-02-05T20:03:36+08:00"
         }
     ]
 }
