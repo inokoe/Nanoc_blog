@@ -3,12 +3,54 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-06T13:57:16+08:00</updated>
+    <updated>2022-02-06T14:14:00+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Python UserAgent 库</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/python-useragent-ku/"/>
+        <id>https://nanoc.work/python-useragent-ku/</id>
+            <category term="Python"/>
+
+        <updated>2022-02-06T14:14:00+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Python UserAgent 库 my-fake-useragent https://pypi.org/project/my-fake-useragent/ https://github.com/a358003542/my-fake-useragent 针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。 pip install my_fake_useragent //python3 pip3 install my_fake_useragent 特点 提供浏览器定制，如Chrome、Edge，包括移动端 from my_fake_useragent import UserAgent ua = UserAgent(family=&#39;chrome&#39;) res = ua.random() 在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="python-useragent-库">Python UserAgent 库</h1>
+<p>my-fake-useragent</p>
+<blockquote>
+<p><a href="https://pypi.org/project/my-fake-useragent/">https://pypi.org/project/my-fake-useragent/</a>
+<a href="https://github.com/a358003542/my-fake-useragent">https://github.com/a358003542/my-fake-useragent</a></p>
+</blockquote>
+<h2 id="用处">用处</h2>
+<p>针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。</p>
+<h2 id="安装">安装</h2>
+<pre><code class="language-shell">pip install my_fake_useragent
+//python3
+pip3 install my_fake_useragent
+</code></pre>
+<h2 id="特点">特点</h2>
+<p>提供浏览器定制，如Chrome、Edge，包括移动端</p>
+<h2 id="使用">使用</h2>
+<pre><code class="language-python">from my_fake_useragent import UserAgent
+ua = UserAgent(family=&#39;chrome&#39;)
+res = ua.random()
+</code></pre>
+<p>在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Linux更换DNS</title>
         <author>
@@ -456,50 +498,6 @@ int main() {
 <h2 id="解决方法">解决方法</h2>
 <p>重置BIOS，笔记本未插电状态关机，并尽可能长按电源键使其开机，并强制断电以强制BIOS重新设置。
 如果不适用此方法，请移至Google进行查询，有很多解决办法，但主要跟特定的机器相关。</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>apache强制HTTPS</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/apacheqiang-zhi-https/"/>
-        <id>https://nanoc.work/apacheqiang-zhi-https/</id>
-            <category term="Apache"/>
-
-        <updated>2022-02-05T20:02:40+08:00</updated>
-            <summary>
-                <![CDATA[
-                    apache强制HTTPS Https已经成为了标配，如无特殊需求，一般需要对80做301重定向到443，即所说的强制Https。 &lt;IfModule mod_rewrite.c&gt; RewriteEngine on RewriteBase / RewriteCond %{SERVER_PORT} !^443$ RewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L] &lt;/IfModule&gt; Apache - Typecho静态化 规则如下： &lt;IfModule mod_rewrite.c&gt; RewriteEngine On # 下面是在根目录，文件夹要修改路径 RewriteBase / RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule ^(.*)$ /index.php/$1 [L] &lt;/IfModule&gt; 接着去Typecho后台也开启静态化。 有多种规则写法 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="apache强制https">apache强制HTTPS</h2>
-<p>Https已经成为了标配，如无特殊需求，一般需要对80做301重定向到443，即所说的强制Https。</p>
-<pre><code>&lt;IfModule mod_rewrite.c&gt;
-RewriteEngine on
-RewriteBase /
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L]
-&lt;/IfModule&gt;
-</code></pre>
-<h2 id="apache---typecho静态化">Apache - Typecho静态化</h2>
-<p>规则如下：</p>
-<pre><code>&lt;IfModule mod_rewrite.c&gt;
-RewriteEngine On
-# 下面是在根目录，文件夹要修改路径
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.php/$1 [L]
-&lt;/IfModule&gt;
-</code></pre>
-<p>接着去Typecho后台也开启静态化。</p>
-<h2 id="注意">注意</h2>
-<p>有多种规则写法</p>
 
             ]]>
         </content>

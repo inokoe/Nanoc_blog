@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/python-useragent-ku/",
+            "url": "https://nanoc.work/python-useragent-ku/",
+            "title": "Python UserAgent 库",
+            "summary": "Python UserAgent 库 my-fake-useragent https://pypi.org/project/my-fake-useragent/ https://github.com/a358003542/my-fake-useragent 针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。 pip install my_fake_useragent //python3 pip3 install my_fake_useragent 特点 提供浏览器定制，如Chrome、Edge，包括移动端 from my_fake_useragent import UserAgent ua = UserAgent(family=&#39;chrome&#39;) res = ua.random() 在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。 ",
+            "content_html": "<h1 id=\"python-useragent-库\">Python UserAgent 库</h1>\n<p>my-fake-useragent</p>\n<blockquote>\n<p><a href=\"https://pypi.org/project/my-fake-useragent/\">https://pypi.org/project/my-fake-useragent/</a>\n<a href=\"https://github.com/a358003542/my-fake-useragent\">https://github.com/a358003542/my-fake-useragent</a></p>\n</blockquote>\n<h2 id=\"用处\">用处</h2>\n<p>针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。</p>\n<h2 id=\"安装\">安装</h2>\n<pre><code class=\"language-shell\">pip install my_fake_useragent\n//python3\npip3 install my_fake_useragent\n</code></pre>\n<h2 id=\"特点\">特点</h2>\n<p>提供浏览器定制，如Chrome、Edge，包括移动端</p>\n<h2 id=\"使用\">使用</h2>\n<pre><code class=\"language-python\">from my_fake_useragent import UserAgent\nua = UserAgent(family=&#39;chrome&#39;)\nres = ua.random()\n</code></pre>\n<p>在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。</p>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Python"
+            ],
+            "date_published": "2022-02-06T14:14:00+08:00",
+            "date_modified": "2022-02-06T14:14:00+08:00"
+        },
+        {
             "id": "https://nanoc.work/linuxgeng-huan-dns/",
             "url": "https://nanoc.work/linuxgeng-huan-dns/",
             "title": "Linux更换DNS",
@@ -144,21 +159,6 @@
             ],
             "date_published": "2022-02-05T20:03:36+08:00",
             "date_modified": "2022-02-05T20:03:36+08:00"
-        },
-        {
-            "id": "https://nanoc.work/apacheqiang-zhi-https/",
-            "url": "https://nanoc.work/apacheqiang-zhi-https/",
-            "title": "apache强制HTTPS",
-            "summary": "apache强制HTTPS Https已经成为了标配，如无特殊需求，一般需要对80做301重定向到443，即所说的强制Https。 &lt;IfModule mod_rewrite.c&gt; RewriteEngine on RewriteBase / RewriteCond %{SERVER_PORT} !^443$ RewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L] &lt;/IfModule&gt; Apache - Typecho静态化 规则如下： &lt;IfModule mod_rewrite.c&gt; RewriteEngine On # 下面是在根目录，文件夹要修改路径 RewriteBase / RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule ^(.*)$ /index.php/$1 [L] &lt;/IfModule&gt; 接着去Typecho后台也开启静态化。 有多种规则写法 ",
-            "content_html": "<h2 id=\"apache强制https\">apache强制HTTPS</h2>\n<p>Https已经成为了标配，如无特殊需求，一般需要对80做301重定向到443，即所说的强制Https。</p>\n<pre><code>&lt;IfModule mod_rewrite.c&gt;\nRewriteEngine on\nRewriteBase /\nRewriteCond %{SERVER_PORT} !^443$\nRewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L]\n&lt;/IfModule&gt;\n</code></pre>\n<h2 id=\"apache---typecho静态化\">Apache - Typecho静态化</h2>\n<p>规则如下：</p>\n<pre><code>&lt;IfModule mod_rewrite.c&gt;\nRewriteEngine On\n# 下面是在根目录，文件夹要修改路径\nRewriteBase /\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule ^(.*)$ /index.php/$1 [L]\n&lt;/IfModule&gt;\n</code></pre>\n<p>接着去Typecho后台也开启静态化。</p>\n<h2 id=\"注意\">注意</h2>\n<p>有多种规则写法</p>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Apache"
-            ],
-            "date_published": "2022-02-05T20:02:40+08:00",
-            "date_modified": "2022-02-05T20:02:40+08:00"
         }
     ]
 }
