@@ -3,14 +3,14 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-07T19:14:03+08:00</updated>
+    <updated>2022-02-07T19:15:25+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
     <entry>
-        <title>Python Request</title>
+        <title>Python Request Timeout</title>
         <author>
             <name>Nanoc</name>
         </author>
@@ -18,7 +18,7 @@
         <id>https://nanoc.work/python-request/</id>
             <category term="Python"/>
 
-        <updated>2022-02-07T19:14:03+08:00</updated>
+        <updated>2022-02-07T19:15:25+08:00</updated>
             <summary>
                 <![CDATA[
                     Source https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code. If&hellip;
