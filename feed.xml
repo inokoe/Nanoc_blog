@@ -3,12 +3,66 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-06T22:54:47+08:00</updated>
+    <updated>2022-02-07T19:14:03+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Python Request</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/python-request/"/>
+        <id>https://nanoc.work/python-request/</id>
+            <category term="Python"/>
+
+        <updated>2022-02-07T19:14:03+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Source https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code. If&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="source">Source</h2>
+<blockquote>
+<p><a href="https://github.com/psf/requests">https://github.com/psf/requests</a>
+<a href="https://docs.python-requests.org/en/latest/">https://docs.python-requests.org/en/latest/</a>
+<a href="https://pypi.org/project/requests/">https://pypi.org/project/requests/</a></p>
+</blockquote>
+<h2 id="install">Install</h2>
+<p>pip install requests
+or
+pip3 install requests</p>
+<h2 id="errors-and-exceptions">Errors and Exceptions</h2>
+<blockquote>
+<p>In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception.</p>
+</blockquote>
+<blockquote>
+<p>Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code.</p>
+</blockquote>
+<blockquote>
+<p>If a request times out, a Timeout exception is raised.</p>
+</blockquote>
+<blockquote>
+<p>If a request exceeds the configured number of maximum redirections, a TooManyRedirects exception is raised.</p>
+</blockquote>
+<blockquote>
+<p>All exceptions that Requests explicitly raises inherit from requests.exceptions.RequestException.</p>
+</blockquote>
+<h2 id="make-timeout">Make Timeout</h2>
+<p>So we can set the timeout as follows:</p>
+<pre><code class="language-python">try:
+    response = requests.get(url,timeout=2)
+except requests.exceptions.RequestException as e:
+    function()
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>AMH面板路径</title>
         <author>
@@ -443,62 +497,6 @@ f.close()
 f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;r&#39;, encoding=&quot;utf-8&quot;)
 f.write(&#39;653&#39;) 
 f.close()
-</code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Cpp 利用stringstream转换字符</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/"/>
-        <id>https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/</id>
-            <category term="C++"/>
-
-        <updated>2022-02-05T20:04:19+08:00</updated>
-            <summary>
-                <![CDATA[
-                    stringstream stringstream是包含在中的，其中定义了三个类：istringstream、ostringstream 和 stringstream，分别用来进行流的输入、输出和输入输出操作。 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { stringstream sts; string x = &quot;10&quot;; int z = 100; string y = &quot;&quot;; //string 给 string sts&lt;&lt;x; y = sts.str(); cout&lt;&lt;y&lt;&lt;endl; //清除缓冲区 /* 在多次数据类型转换的场景下，必须使用 clear() 方法清空 stringstream，不使用 clear()方法或使用 str(&quot;&quot;) 方法，都不能得到数据类型转换的正确结果。 */ sts.str(&quot;&quot;);&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="stringstream">stringstream</h2>
-<blockquote>
-<p>stringstream是包含在<sstream>中的，其中定义了三个类：istringstream、ostringstream 和 stringstream，分别用来进行流的输入、输出和输入输出操作。</p>
-</blockquote>
-<h2 id="用法">用法</h2>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-
-int main()
-{
-    stringstream sts;
-    string x = &quot;10&quot;; 
-    int z = 100;
-    string y = &quot;&quot;;
-
-    //string 给 string
-    sts&lt;&lt;x;
-    y = sts.str();
-    cout&lt;&lt;y&lt;&lt;endl;
-    
-    //清除缓冲区
-    /*
-    在多次数据类型转换的场景下，必须使用 clear() 方法清空 stringstream，不使用 clear()方法或使用 str(&quot;&quot;) 方法，都不能得到数据类型转换的正确结果。
-    */
-    sts.str(&quot;&quot;);
-    sts.clear();
-
-    //int 给 string
-    sts&lt;&lt;z;
-    x = sts.str();
-    cout&lt;&lt;x&lt;&lt;endl;
-
-    return 0;
-}
 </code></pre>
 
             ]]>

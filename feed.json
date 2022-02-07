@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/python-request/",
+            "url": "https://nanoc.work/python-request/",
+            "title": "Python Request",
+            "summary": "Source https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code. If&hellip;",
+            "content_html": "<h2 id=\"source\">Source</h2>\n<blockquote>\n<p><a href=\"https://github.com/psf/requests\">https://github.com/psf/requests</a>\n<a href=\"https://docs.python-requests.org/en/latest/\">https://docs.python-requests.org/en/latest/</a>\n<a href=\"https://pypi.org/project/requests/\">https://pypi.org/project/requests/</a></p>\n</blockquote>\n<h2 id=\"install\">Install</h2>\n<p>pip install requests\nor\npip3 install requests</p>\n<h2 id=\"errors-and-exceptions\">Errors and Exceptions</h2>\n<blockquote>\n<p>In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception.</p>\n</blockquote>\n<blockquote>\n<p>Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code.</p>\n</blockquote>\n<blockquote>\n<p>If a request times out, a Timeout exception is raised.</p>\n</blockquote>\n<blockquote>\n<p>If a request exceeds the configured number of maximum redirections, a TooManyRedirects exception is raised.</p>\n</blockquote>\n<blockquote>\n<p>All exceptions that Requests explicitly raises inherit from requests.exceptions.RequestException.</p>\n</blockquote>\n<h2 id=\"make-timeout\">Make Timeout</h2>\n<p>So we can set the timeout as follows:</p>\n<pre><code class=\"language-python\">try:\n    response = requests.get(url,timeout=2)\nexcept requests.exceptions.RequestException as e:\n    function()\n</code></pre>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Python"
+            ],
+            "date_published": "2022-02-07T19:14:03+08:00",
+            "date_modified": "2022-02-07T19:14:03+08:00"
+        },
+        {
             "id": "https://nanoc.work/amhmian-ban-lu-jing/",
             "url": "https://nanoc.work/amhmian-ban-lu-jing/",
             "title": "AMH面板路径",
@@ -144,21 +159,6 @@
             ],
             "date_published": "2022-02-05T20:04:42+08:00",
             "date_modified": "2022-02-05T20:04:42+08:00"
-        },
-        {
-            "id": "https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/",
-            "url": "https://nanoc.work/cpp-li-yong-stringstreamzhuan-huan-zi-fu/",
-            "title": "Cpp 利用stringstream转换字符",
-            "summary": "stringstream stringstream是包含在中的，其中定义了三个类：istringstream、ostringstream 和 stringstream，分别用来进行流的输入、输出和输入输出操作。 #include &lt;bits/stdc++.h&gt; using namespace std; int main() { stringstream sts; string x = &quot;10&quot;; int z = 100; string y = &quot;&quot;; //string 给 string sts&lt;&lt;x; y = sts.str(); cout&lt;&lt;y&lt;&lt;endl; //清除缓冲区 /* 在多次数据类型转换的场景下，必须使用 clear() 方法清空 stringstream，不使用 clear()方法或使用 str(&quot;&quot;) 方法，都不能得到数据类型转换的正确结果。 */ sts.str(&quot;&quot;);&hellip;",
-            "content_html": "<h2 id=\"stringstream\">stringstream</h2>\n<blockquote>\n<p>stringstream是包含在<sstream>中的，其中定义了三个类：istringstream、ostringstream 和 stringstream，分别用来进行流的输入、输出和输入输出操作。</p>\n</blockquote>\n<h2 id=\"用法\">用法</h2>\n<pre><code class=\"language-cpp\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n\nint main()\n{\n    stringstream sts;\n    string x = &quot;10&quot;; \n    int z = 100;\n    string y = &quot;&quot;;\n\n    //string 给 string\n    sts&lt;&lt;x;\n    y = sts.str();\n    cout&lt;&lt;y&lt;&lt;endl;\n    \n    //清除缓冲区\n    /*\n    在多次数据类型转换的场景下，必须使用 clear() 方法清空 stringstream，不使用 clear()方法或使用 str(&quot;&quot;) 方法，都不能得到数据类型转换的正确结果。\n    */\n    sts.str(&quot;&quot;);\n    sts.clear();\n\n    //int 给 string\n    sts&lt;&lt;z;\n    x = sts.str();\n    cout&lt;&lt;x&lt;&lt;endl;\n\n    return 0;\n}\n</code></pre>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "C++"
-            ],
-            "date_published": "2022-02-05T20:04:19+08:00",
-            "date_modified": "2022-02-05T20:04:19+08:00"
         }
     ]
 }
