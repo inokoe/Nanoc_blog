@@ -3,7 +3,7 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-08T17:48:50+08:00</updated>
+    <updated>2022-02-08T17:50:33+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://nanoc.work/raw-manga-website/</id>
             <category term="Others"/>
 
-        <updated>2022-02-08T17:48:50+08:00</updated>
+        <updated>2022-02-08T17:50:33+08:00</updated>
             <summary>
                 <![CDATA[
                     Raw manga You can find raw manga from the websites: https://klmag.net/index https://neatmanga.com/ 
@@ -44,16 +44,16 @@
         <id>https://nanoc.work/python-request/</id>
             <category term="Python"/>
 
-        <updated>2022-02-07T22:49:49+08:00</updated>
+        <updated>2022-02-08T17:50:26+08:00</updated>
             <summary>
                 <![CDATA[
-                    Source You can find more data from bellow: https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP&hellip;
+                    Source You can find more data from URLs: https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2 id="source">Source</h2>
-<p>You can find more data from bellow:</p>
+<p>You can find more data from URLs:</p>
 <blockquote>
 <p><a href="https://github.com/psf/requests">https://github.com/psf/requests</a><br><a href="https://docs.python-requests.org/en/latest/">https://docs.python-requests.org/en/latest/</a>
 <a href="https://pypi.org/project/requests/">https://pypi.org/project/requests/</a></p>

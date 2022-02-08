@@ -22,14 +22,14 @@
                    "Others"
             ],
             "date_published": "2022-02-08T17:48:50+08:00",
-            "date_modified": "2022-02-08T17:48:50+08:00"
+            "date_modified": "2022-02-08T17:50:33+08:00"
         },
         {
             "id": "https://nanoc.work/python-request/",
             "url": "https://nanoc.work/python-request/",
             "title": "Python Request Timeout",
-            "summary": "Source You can find more data from bellow: https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP&hellip;",
-            "content_html": "<h2 id=\"source\">Source</h2>\n<p>You can find more data from bellow:</p>\n<blockquote>\n<p><a href=\"https://github.com/psf/requests\">https://github.com/psf/requests</a><br><a href=\"https://docs.python-requests.org/en/latest/\">https://docs.python-requests.org/en/latest/</a>\n<a href=\"https://pypi.org/project/requests/\">https://pypi.org/project/requests/</a></p>\n</blockquote>\n<h2 id=\"install\">Install</h2>\n<p>pip install requests\nor\npip3 install requests</p>\n<h2 id=\"errors-and-exceptions\">Errors and Exceptions</h2>\n<blockquote>\n<p>In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception.</p>\n</blockquote>\n<blockquote>\n<p>Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code.</p>\n</blockquote>\n<blockquote>\n<p>If a request times out, a Timeout exception is raised.</p>\n</blockquote>\n<blockquote>\n<p>If a request exceeds the configured number of maximum redirections, a TooManyRedirects exception is raised.</p>\n</blockquote>\n<blockquote>\n<p>All exceptions that Requests explicitly raises inherit from requests.exceptions.RequestException.</p>\n</blockquote>\n<h2 id=\"make-timeout\">Make Timeout</h2>\n<p>So we can set the timeout as follows:</p>\n<pre><code class=\"language-python\">try:\n    response = requests.get(url,timeout=2)\nexcept requests.exceptions.RequestException as e:\n    function()\n</code></pre>\n",
+            "summary": "Source You can find more data from URLs: https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP&hellip;",
+            "content_html": "<h2 id=\"source\">Source</h2>\n<p>You can find more data from URLs:</p>\n<blockquote>\n<p><a href=\"https://github.com/psf/requests\">https://github.com/psf/requests</a><br><a href=\"https://docs.python-requests.org/en/latest/\">https://docs.python-requests.org/en/latest/</a>\n<a href=\"https://pypi.org/project/requests/\">https://pypi.org/project/requests/</a></p>\n</blockquote>\n<h2 id=\"install\">Install</h2>\n<p>pip install requests\nor\npip3 install requests</p>\n<h2 id=\"errors-and-exceptions\">Errors and Exceptions</h2>\n<blockquote>\n<p>In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception.</p>\n</blockquote>\n<blockquote>\n<p>Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code.</p>\n</blockquote>\n<blockquote>\n<p>If a request times out, a Timeout exception is raised.</p>\n</blockquote>\n<blockquote>\n<p>If a request exceeds the configured number of maximum redirections, a TooManyRedirects exception is raised.</p>\n</blockquote>\n<blockquote>\n<p>All exceptions that Requests explicitly raises inherit from requests.exceptions.RequestException.</p>\n</blockquote>\n<h2 id=\"make-timeout\">Make Timeout</h2>\n<p>So we can set the timeout as follows:</p>\n<pre><code class=\"language-python\">try:\n    response = requests.get(url,timeout=2)\nexcept requests.exceptions.RequestException as e:\n    function()\n</code></pre>\n",
             "author": {
                 "name": "Nanoc"
             },
@@ -37,7 +37,7 @@
                    "Python"
             ],
             "date_published": "2022-02-07T19:14:03+08:00",
-            "date_modified": "2022-02-07T22:49:49+08:00"
+            "date_modified": "2022-02-08T17:50:26+08:00"
         },
         {
             "id": "https://nanoc.work/amhmian-ban-lu-jing/",
