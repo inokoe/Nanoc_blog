@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/raw-manga-website/",
+            "url": "https://nanoc.work/raw-manga-website/",
+            "title": "Raw Manga Website",
+            "summary": "Raw manga You can find raw manga from the websites: https://klmag.net/index https://neatmanga.com/ ",
+            "content_html": "<h2 id=\"raw-manga\">Raw manga</h2>\n<p>You can find raw manga from the websites:</p>\n<blockquote>\n<p><a href=\"https://klmag.net/index\">https://klmag.net/index</a><br><a href=\"https://neatmanga.com/\">https://neatmanga.com/</a></p>\n</blockquote>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Others"
+            ],
+            "date_published": "2022-02-08T17:48:50+08:00",
+            "date_modified": "2022-02-08T17:48:50+08:00"
+        },
+        {
             "id": "https://nanoc.work/python-request/",
             "url": "https://nanoc.work/python-request/",
             "title": "Python Request Timeout",
@@ -144,21 +159,6 @@
             ],
             "date_published": "2022-02-05T20:04:59+08:00",
             "date_modified": "2022-02-05T20:04:59+08:00"
-        },
-        {
-            "id": "https://nanoc.work/python-wen-jian-du-xie-cao-zuo/",
-            "url": "https://nanoc.work/python-wen-jian-du-xie-cao-zuo/",
-            "title": "Python 文件读写操作",
-            "summary": "读写模式 值 描述 r 读模式 w 写模式 a 追加模式 b 二进制模式（可追加到其他模式中） + 读/写模式（可追加到其他模式中 # 追加读写模式 自动创建文件 f = open(&quot;demo.txt&quot;, &#39;a+&#39;, encoding=&quot;utf-8&quot;) f.write(soup.text) f.close() # 覆盖 自动创建文件 f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w&#39;, encoding=&quot;utf-8&quot;) f.write(&#39;653&#39;) f.close() f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w+&#39;, encoding=&quot;utf-8&quot;) f.write(&#39;653&#39;) # 定位到开头可以正常读取 f.seek(0) print(f.read()) f.close() #&hellip;",
-            "content_html": "<h2 id=\"读写模式\">读写模式</h2>\n<table>\n<thead>\n<tr>\n<th>值</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>r</td>\n<td>读模式</td>\n</tr>\n<tr>\n<td>w</td>\n<td>写模式</td>\n</tr>\n<tr>\n<td>a</td>\n<td>追加模式</td>\n</tr>\n<tr>\n<td>b</td>\n<td>二进制模式（可追加到其他模式中）</td>\n</tr>\n<tr>\n<td>+</td>\n<td>读/写模式（可追加到其他模式中</td>\n</tr>\n</tbody></table>\n<pre><code class=\"language-python\"># 追加读写模式 自动创建文件\nf = open(&quot;demo.txt&quot;, &#39;a+&#39;, encoding=&quot;utf-8&quot;)\nf.write(soup.text)\nf.close()\n\n# 覆盖 自动创建文件\nf = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w&#39;, encoding=&quot;utf-8&quot;)\nf.write(&#39;653&#39;) \nf.close()\n\nf = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w+&#39;, encoding=&quot;utf-8&quot;)\nf.write(&#39;653&#39;) \n# 定位到开头可以正常读取\nf.seek(0)\nprint(f.read())\nf.close()\n\n# 只读\nf = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;r&#39;, encoding=&quot;utf-8&quot;)\nf.write(&#39;653&#39;) \nf.close()\n</code></pre>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Python"
-            ],
-            "date_published": "2022-02-05T20:04:42+08:00",
-            "date_modified": "2022-02-05T20:04:42+08:00"
         }
     ]
 }

@@ -3,12 +3,38 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-08T16:40:30+08:00</updated>
+    <updated>2022-02-08T17:48:50+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Raw Manga Website</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/raw-manga-website/"/>
+        <id>https://nanoc.work/raw-manga-website/</id>
+            <category term="Others"/>
+
+        <updated>2022-02-08T17:48:50+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Raw manga You can find raw manga from the websites: https://klmag.net/index https://neatmanga.com/ 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="raw-manga">Raw manga</h2>
+<p>You can find raw manga from the websites:</p>
+<blockquote>
+<p><a href="https://klmag.net/index">https://klmag.net/index</a><br><a href="https://neatmanga.com/">https://neatmanga.com/</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Python Request Timeout</title>
         <author>
@@ -427,78 +453,6 @@ if __name__ == &quot;__main__&quot;:
     end_time = time.time()
     use_time = end_time - start_time
     print(&quot;second:&quot;+ str(use_time))
-</code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python 文件读写操作</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/python-wen-jian-du-xie-cao-zuo/"/>
-        <id>https://nanoc.work/python-wen-jian-du-xie-cao-zuo/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-05T20:04:42+08:00</updated>
-            <summary>
-                <![CDATA[
-                    读写模式 值 描述 r 读模式 w 写模式 a 追加模式 b 二进制模式（可追加到其他模式中） + 读/写模式（可追加到其他模式中 # 追加读写模式 自动创建文件 f = open(&quot;demo.txt&quot;, &#39;a+&#39;, encoding=&quot;utf-8&quot;) f.write(soup.text) f.close() # 覆盖 自动创建文件 f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w&#39;, encoding=&quot;utf-8&quot;) f.write(&#39;653&#39;) f.close() f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w+&#39;, encoding=&quot;utf-8&quot;) f.write(&#39;653&#39;) # 定位到开头可以正常读取 f.seek(0) print(f.read()) f.close() #&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="读写模式">读写模式</h2>
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>r</td>
-<td>读模式</td>
-</tr>
-<tr>
-<td>w</td>
-<td>写模式</td>
-</tr>
-<tr>
-<td>a</td>
-<td>追加模式</td>
-</tr>
-<tr>
-<td>b</td>
-<td>二进制模式（可追加到其他模式中）</td>
-</tr>
-<tr>
-<td>+</td>
-<td>读/写模式（可追加到其他模式中</td>
-</tr>
-</tbody></table>
-<pre><code class="language-python"># 追加读写模式 自动创建文件
-f = open(&quot;demo.txt&quot;, &#39;a+&#39;, encoding=&quot;utf-8&quot;)
-f.write(soup.text)
-f.close()
-
-# 覆盖 自动创建文件
-f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w&#39;, encoding=&quot;utf-8&quot;)
-f.write(&#39;653&#39;) 
-f.close()
-
-f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;w+&#39;, encoding=&quot;utf-8&quot;)
-f.write(&#39;653&#39;) 
-# 定位到开头可以正常读取
-f.seek(0)
-print(f.read())
-f.close()
-
-# 只读
-f = open(&quot;C:/Users/Inokoe/Desktop/demo.txt&quot;, &#39;r&#39;, encoding=&quot;utf-8&quot;)
-f.write(&#39;653&#39;) 
-f.close()
 </code></pre>
 
             ]]>
