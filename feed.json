@@ -28,8 +28,8 @@
             "id": "https://nanoc.work/amhmian-ban-lu-jing/",
             "url": "https://nanoc.work/amhmian-ban-lu-jing/",
             "title": "AMH面板路径",
-            "summary": "Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin ",
-            "content_html": "<h2 id=\"python连接数据库\">Python连接数据库</h2>\n<p>路径位于/tmp/mysql*.sock\n例：unix_socket=’/tmp/mysql-5.6.sock’</p>\n<h2 id=\"运行环境配置路径\">运行环境配置路径</h2>\n<p>/home/wwwroot/\nvhost中包含了不同站点Nginx的配置文件</p>\n<h2 id=\"软件配置\">软件配置</h2>\n<p>/usr/local/bin</p>\n",
+            "summary": "Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin /usr/local/redis-6.2/bin/redis-cli ",
+            "content_html": "<h2 id=\"python连接数据库\">Python连接数据库</h2>\n<p>路径位于/tmp/mysql*.sock\n例：unix_socket=’/tmp/mysql-5.6.sock’</p>\n<h2 id=\"运行环境配置路径\">运行环境配置路径</h2>\n<p>/home/wwwroot/\nvhost中包含了不同站点Nginx的配置文件</p>\n<h2 id=\"软件配置\">软件配置</h2>\n<p>/usr/local/bin</p>\n<h2 id=\"reids客户端路径\">Reids客户端路径</h2>\n<p>/usr/local/redis-6.2/bin/redis-cli</p>\n",
             "author": {
                 "name": "Nanoc"
             },
@@ -37,7 +37,7 @@
                    "Linux"
             ],
             "date_published": "2022-02-06T22:52:15+08:00",
-            "date_modified": "2022-02-06T22:52:32+08:00"
+            "date_modified": "2022-02-08T16:40:30+08:00"
         },
         {
             "id": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",

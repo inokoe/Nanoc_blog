@@ -3,7 +3,7 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-07T22:49:49+08:00</updated>
+    <updated>2022-02-08T16:40:30+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
@@ -72,10 +72,10 @@ except requests.exceptions.RequestException as e:
         <id>https://nanoc.work/amhmian-ban-lu-jing/</id>
             <category term="Linux"/>
 
-        <updated>2022-02-06T22:52:32+08:00</updated>
+        <updated>2022-02-08T16:40:30+08:00</updated>
             <summary>
                 <![CDATA[
-                    Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin 
+                    Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin /usr/local/redis-6.2/bin/redis-cli 
                 ]]>
             </summary>
         <content type="html">
@@ -88,6 +88,8 @@ except requests.exceptions.RequestException as e:
 vhost中包含了不同站点Nginx的配置文件</p>
 <h2 id="软件配置">软件配置</h2>
 <p>/usr/local/bin</p>
+<h2 id="reids客户端路径">Reids客户端路径</h2>
+<p>/usr/local/redis-6.2/bin/redis-cli</p>
 
             ]]>
         </content>
