@@ -3,12 +3,40 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-08T17:50:33+08:00</updated>
+    <updated>2022-02-10T13:17:40+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>v2rayN Mux多路复用</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/v2rayn-muxduo-lu-fu-yong/"/>
+        <id>https://nanoc.work/v2rayn-muxduo-lu-fu-yong/</id>
+            <category term="Others"/>
+
+        <updated>2022-02-10T13:17:40+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Mux多路复用 顾名思义，Mux功能可将多个TCP连接合并为一个TCP连接，以减少TCP握手延迟，但此种方法并不能提高吞吐量，即不会突破原始链路最大速率，适用于高延迟丢包线路，正常线路不建议开，会降低代理稳定性。 Mux只需要在客户端启用， 服务器端自适应。 https://www.v2ray.com/chapter_02/mux.html https://www.v2ray.com/developer/protocols/muxcool.html 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="mux多路复用">Mux多路复用</h2>
+<p>顾名思义，Mux功能可将多个TCP连接合并为一个TCP连接，以减少TCP握手延迟，但此种方法并不能提高吞吐量，即不会突破原始链路最大速率，适用于高延迟丢包线路，正常线路不建议开，会降低代理稳定性。
+Mux只需要在客户端启用， 服务器端自适应。</p>
+<blockquote>
+<p><a href="https://www.v2ray.com/chapter_02/mux.html">https://www.v2ray.com/chapter_02/mux.html</a>
+<a href="https://www.v2ray.com/developer/protocols/muxcool.html">https://www.v2ray.com/developer/protocols/muxcool.html</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Raw Manga Website</title>
         <author>
@@ -393,66 +421,6 @@ print(b)
 # Base64解码并.decode(&#39;utf-8&#39;)去掉b&#39;&#39;
 c = base64.b64decode(b).decode(&#39;utf-8&#39;)
 print(c)
-</code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python Multiprocessing用法简单速记</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/"/>
-        <id>https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-05T20:04:59+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Python Multiprocessing用法简单速记 使用Multiprocessing进行简单多进程。 from multiprocessing import Pool import time import random def toPool(todo): newarr = [] for i in range(1000): newarr.append(random.random()*10) newarr.sort() if __name__ == &quot;__main__&quot;: start_time = time.time() arr = [] for i in range(10000): arr.append(i) for i in arr: newarr = [] for&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="python-multiprocessing用法简单速记">Python Multiprocessing用法简单速记</h2>
-<p>使用Multiprocessing进行简单多进程。</p>
-<pre><code class="language-python">from multiprocessing import Pool
-import time
-import random
-
-def toPool(todo):
-    newarr = []
-    for i in range(1000):
-        newarr.append(random.random()*10)
-        newarr.sort()
-
-
-if __name__ == &quot;__main__&quot;:
-    start_time = time.time()
-    arr = []
-    for i in range(10000):
-        arr.append(i)
-    for i in arr:
-        newarr = []
-        for i in range(1000):
-            newarr.append(random.random()*10)
-            newarr.sort()
-    end_time = time.time()
-    use_time = end_time - start_time
-    print(&quot;first:&quot;+ str(use_time))
-    # 多进程
-    start_time = time.time()
-    arr = []
-    for i in range(10000):
-        arr.append(i)
-    pool = Pool(processes=4)
-    pool.map(toPool, arr)
-    pool.close()
-    pool.join()
-    end_time = time.time()
-    use_time = end_time - start_time
-    print(&quot;second:&quot;+ str(use_time))
 </code></pre>
 
             ]]>

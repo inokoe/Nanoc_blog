@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/v2rayn-muxduo-lu-fu-yong/",
+            "url": "https://nanoc.work/v2rayn-muxduo-lu-fu-yong/",
+            "title": "v2rayN Mux多路复用",
+            "summary": "Mux多路复用 顾名思义，Mux功能可将多个TCP连接合并为一个TCP连接，以减少TCP握手延迟，但此种方法并不能提高吞吐量，即不会突破原始链路最大速率，适用于高延迟丢包线路，正常线路不建议开，会降低代理稳定性。 Mux只需要在客户端启用， 服务器端自适应。 https://www.v2ray.com/chapter_02/mux.html https://www.v2ray.com/developer/protocols/muxcool.html ",
+            "content_html": "<h2 id=\"mux多路复用\">Mux多路复用</h2>\n<p>顾名思义，Mux功能可将多个TCP连接合并为一个TCP连接，以减少TCP握手延迟，但此种方法并不能提高吞吐量，即不会突破原始链路最大速率，适用于高延迟丢包线路，正常线路不建议开，会降低代理稳定性。\nMux只需要在客户端启用， 服务器端自适应。</p>\n<blockquote>\n<p><a href=\"https://www.v2ray.com/chapter_02/mux.html\">https://www.v2ray.com/chapter_02/mux.html</a>\n<a href=\"https://www.v2ray.com/developer/protocols/muxcool.html\">https://www.v2ray.com/developer/protocols/muxcool.html</a></p>\n</blockquote>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Others"
+            ],
+            "date_published": "2022-02-10T13:17:40+08:00",
+            "date_modified": "2022-02-10T13:17:40+08:00"
+        },
+        {
             "id": "https://nanoc.work/raw-manga-website/",
             "url": "https://nanoc.work/raw-manga-website/",
             "title": "Raw Manga Website",
@@ -144,21 +159,6 @@
             ],
             "date_published": "2022-02-05T20:05:17+08:00",
             "date_modified": "2022-02-05T20:05:17+08:00"
-        },
-        {
-            "id": "https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/",
-            "url": "https://nanoc.work/python-multiprocessingyong-fa-jian-dan-su-ji/",
-            "title": "Python Multiprocessing用法简单速记",
-            "summary": "Python Multiprocessing用法简单速记 使用Multiprocessing进行简单多进程。 from multiprocessing import Pool import time import random def toPool(todo): newarr = [] for i in range(1000): newarr.append(random.random()*10) newarr.sort() if __name__ == &quot;__main__&quot;: start_time = time.time() arr = [] for i in range(10000): arr.append(i) for i in arr: newarr = [] for&hellip;",
-            "content_html": "<h2 id=\"python-multiprocessing用法简单速记\">Python Multiprocessing用法简单速记</h2>\n<p>使用Multiprocessing进行简单多进程。</p>\n<pre><code class=\"language-python\">from multiprocessing import Pool\nimport time\nimport random\n\ndef toPool(todo):\n    newarr = []\n    for i in range(1000):\n        newarr.append(random.random()*10)\n        newarr.sort()\n\n\nif __name__ == &quot;__main__&quot;:\n    start_time = time.time()\n    arr = []\n    for i in range(10000):\n        arr.append(i)\n    for i in arr:\n        newarr = []\n        for i in range(1000):\n            newarr.append(random.random()*10)\n            newarr.sort()\n    end_time = time.time()\n    use_time = end_time - start_time\n    print(&quot;first:&quot;+ str(use_time))\n    # 多进程\n    start_time = time.time()\n    arr = []\n    for i in range(10000):\n        arr.append(i)\n    pool = Pool(processes=4)\n    pool.map(toPool, arr)\n    pool.close()\n    pool.join()\n    end_time = time.time()\n    use_time = end_time - start_time\n    print(&quot;second:&quot;+ str(use_time))\n</code></pre>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Python"
-            ],
-            "date_published": "2022-02-05T20:04:59+08:00",
-            "date_modified": "2022-02-05T20:04:59+08:00"
         }
     ]
 }
