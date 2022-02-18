@@ -3,12 +3,49 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-10T13:17:40+08:00</updated>
+    <updated>2022-02-18T18:15:32+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Nginx 伪静态</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/nginx-wei-jing-tai/"/>
+        <id>https://nanoc.work/nginx-wei-jing-tai/</id>
+            <category term="Nginx"/>
+
+        <updated>2022-02-18T18:15:32+08:00</updated>
+            <summary>
+                <![CDATA[
+                    入门 您需要了解以下知识 使 /public/a.php?b=test 变为 /public/a-test.json location ~ ^(.*)/public/a-(.*)\.json { rewrite /public/a-(.*).json /public/a.php?b=$1 last; } 文档 https://www.cnblogs.com/kevingrace/p/10393234.html 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="入门">入门</h2>
+<p>您需要了解以下知识</p>
+<ul>
+<li>正则表达式</li>
+<li>Nginx 配置文件</li>
+</ul>
+<h2 id="实例">实例</h2>
+<p>使 /public/a.php?b=test 变为 /public/a-test.json</p>
+<pre><code>location ~ ^(.*)/public/a-(.*)\.json  {
+  rewrite /public/a-(.*).json /public/a.php?b=$1 last;
+}
+</code></pre>
+<h2 id="文档">文档</h2>
+<blockquote>
+<p><a href="https://www.cnblogs.com/kevingrace/p/10393234.html">https://www.cnblogs.com/kevingrace/p/10393234.html</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>v2rayN Mux多路复用</title>
         <author>
@@ -385,42 +422,6 @@ list[0].get(&#39;href&#39;)
 # Xpath|
 #--------
 demo = selector.xpath(&#39;&#39;)
-</code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python进行Base64解码</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/pythonjin-xing-base64jie-ma/"/>
-        <id>https://nanoc.work/pythonjin-xing-base64jie-ma/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-05T20:05:17+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Python进行Base64解码 使用base64进行解码 import base64 message = &quot;Hello&quot; # 返回字节对象 a = bytes(message, &#39;utf-8&#39;) print(a) # Base64编码 b = base64.b64encode(a) print(b) # Base64解码并.decode(&#39;utf-8&#39;)去掉b&#39;&#39; c = base64.b64decode(b).decode(&#39;utf-8&#39;) print(c) 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="python进行base64解码">Python进行Base64解码</h2>
-<p>使用base64进行解码</p>
-<pre><code class="language-python">import base64
-
-message = &quot;Hello&quot;
-# 返回字节对象
-a = bytes(message, &#39;utf-8&#39;)
-print(a)
-# Base64编码
-b = base64.b64encode(a)
-print(b)
-# Base64解码并.decode(&#39;utf-8&#39;)去掉b&#39;&#39;
-c = base64.b64decode(b).decode(&#39;utf-8&#39;)
-print(c)
 </code></pre>
 
             ]]>
