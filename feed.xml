@@ -3,7 +3,7 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-23T15:14:16+08:00</updated>
+    <updated>2022-02-23T15:22:19+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
@@ -18,19 +18,20 @@
         <id>https://nanoc.work/python-telegram-ku/</id>
             <category term="Python"/>
 
-        <updated>2022-02-23T15:14:11+08:00</updated>
+        <updated>2022-02-23T15:22:19+08:00</updated>
             <summary>
                 <![CDATA[
-                    Python html to telegra.ph poster https://pypi.org/project/html-telegraph-poster/ Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows , , , , , , , , , , elements. It also supports embedded youtube and vimeo iframe tags. 
+                    Python html to telegra.ph poster https://pypi.org/project/html-telegraph-poster/ Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows &lt;a&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;em&gt;, &lt;figure&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;img&gt;, &lt;p&gt;, &lt;strong&gt;, elements. It also supports embedded youtube and vimeo iframe tags. 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2 id="python-html-to-telegraph-poster">Python html to telegra.ph poster</h2>
 <blockquote>
-<p><a href="https://pypi.org/project/html-telegraph-poster/">https://pypi.org/project/html-telegraph-poster/</a>
-Simple python function to post plain html text to <a href="https://telegra.ph/">https://telegra.ph/</a>. Telegra.ph allows <a>, <blockquote>, <br>, <em>, <figure>, <h3>, <h4>, <img>, <p>, <strong>, elements. It also supports embedded youtube and vimeo iframe tags.</p>
+<p><a href="https://pypi.org/project/html-telegraph-poster/">https://pypi.org/project/html-telegraph-poster/</a></p>
 </blockquote>
+<pre><code>Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows &lt;a&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;em&gt;, &lt;figure&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;img&gt;, &lt;p&gt;, &lt;strong&gt;, elements. It also supports embedded youtube and vimeo iframe tags.
+</code></pre>
 
             ]]>
         </content>
