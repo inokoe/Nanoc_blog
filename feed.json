@@ -10,6 +10,36 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/python-telegram-ku/",
+            "url": "https://nanoc.work/python-telegram-ku/",
+            "title": "Python Telegram 库",
+            "summary": "Python html to telegra.ph poster https://pypi.org/project/html-telegraph-poster/ Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows , , , , , , , , , , elements. It also supports embedded youtube and vimeo iframe tags. ",
+            "content_html": "<h2 id=\"python-html-to-telegraph-poster\">Python html to telegra.ph poster</h2>\n<blockquote>\n<p><a href=\"https://pypi.org/project/html-telegraph-poster/\">https://pypi.org/project/html-telegraph-poster/</a>\nSimple python function to post plain html text to <a href=\"https://telegra.ph/\">https://telegra.ph/</a>. Telegra.ph allows <a>, <blockquote>, <br>, <em>, <figure>, <h3>, <h4>, <img>, <p>, <strong>, elements. It also supports embedded youtube and vimeo iframe tags.</p>\n</blockquote>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Python"
+            ],
+            "date_published": "2022-02-23T15:14:04+08:00",
+            "date_modified": "2022-02-23T15:14:11+08:00"
+        },
+        {
+            "id": "https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/",
+            "url": "https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/",
+            "title": "Python 网盘分享下载库",
+            "summary": "Only ondrive https://pypi.org/project/onedrivedownloader/ https://pypi.org/project/cloud-downloader-equitania/ ",
+            "content_html": "<h2 id=\"only-ondrive\">Only ondrive</h2>\n<blockquote>\n<p><a href=\"https://pypi.org/project/onedrivedownloader/\">https://pypi.org/project/onedrivedownloader/</a></p>\n</blockquote>\n<h2 id=\"onedrive-and-others\">Onedrive and others</h2>\n<blockquote>\n<p><a href=\"https://pypi.org/project/cloud-downloader-equitania/\">https://pypi.org/project/cloud-downloader-equitania/</a></p>\n</blockquote>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Python"
+            ],
+            "date_published": "2022-02-22T13:18:12+08:00",
+            "date_modified": "2022-02-23T15:14:16+08:00"
+        },
+        {
             "id": "https://nanoc.work/nginx-wei-jing-tai/",
             "url": "https://nanoc.work/nginx-wei-jing-tai/",
             "title": "Nginx 伪静态",
@@ -128,37 +158,6 @@
             ],
             "date_published": "2022-02-06T13:57:16+08:00",
             "date_modified": "2022-02-06T13:57:16+08:00"
-        },
-        {
-            "id": "https://nanoc.work/shi-jian-xian-fen-ge-fu/",
-            "url": "https://nanoc.work/shi-jian-xian-fen-ge-fu/",
-            "title": "时间线分隔符",
-            "summary": "时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。 ",
-            "content_html": "<p>时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。</p>\n",
-            "image": "https://nanoc.work/media/posts/163/2.jpg",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Others"
-            ],
-            "date_published": "2022-02-05T20:15:56+08:00",
-            "date_modified": "2022-02-05T20:21:20+08:00"
-        },
-        {
-            "id": "https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/",
-            "url": "https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/",
-            "title": "Python-request&amp;beautifulsoup爬虫使用方法速记",
-            "summary": "Python-request&amp;beautifulsoup爬虫使用方法速记 简单记录request&amp;bs4使用方法。 import requests # 浏览器头 headers = { &#39;user_agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11&#39; } # 传参 params = {} params[&#39;email&#39;] = userName[number] params[&#39;passwd&#39;] = userPasswd[number] # 发送request get请求 response = requests.get(url=url, params=params, headers=headers) # 发送request post请求 response&hellip;",
-            "content_html": "<h2 id=\"python-requestbeautifulsoup爬虫使用方法速记\">Python-request&amp;beautifulsoup爬虫使用方法速记</h2>\n<p>简单记录request&amp;bs4使用方法。</p>\n<h2 id=\"request\">request</h2>\n<pre><code class=\"language-python\">import requests\n# 浏览器头\nheaders = {\n    &#39;user_agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11&#39;\n}\n# 传参\nparams = {}\nparams[&#39;email&#39;] = userName[number]\nparams[&#39;passwd&#39;] = userPasswd[number]\n# 发送request get请求\nresponse = requests.get(url=url, params=params, headers=headers)\n# 发送request post请求\nresponse = requests.post(url=url, params=params, headers=headers)\n</code></pre>\n<pre><code class=\"language-python\">headers = {\n    &#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; WOW64)&#39;\n    &#39; AppleWebKit/537.36(KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&#39;,\n    &#39;Content-Type&#39;: &#39;application/x-www-form-urlencoded&#39;,\n}\n</code></pre>\n<h2 id=\"beautifulsoup\">beautifulsoup</h2>\n<pre><code class=\"language-python\">from bs4 import BeautifulSoup\n\n#-----\n# 解析|\n#-----\n# 发起请求\nresponse = requests.get(url, headers=headers)\n# 指定编码\nresponse.encoding = &#39;utf-8&#39;\nsoup = BeautifulSoup(response.text)\n# 使用lxml解析\nsoup = BeautifulSoup(html, &#39;lxml&#39;)\n\n#--------\n# 元素选择| # 使用selector,返回list\n#--------\n# 选择指定元素一次\nsoup = soup.select_one(&quot;a&quot;)\n# 选择全部指定元素\nsoup = soup.select(&quot;a&quot;)\n# 选择全部指定元素\nsoup = soup.find_all(&quot;a&quot;)\n# 按照属性查找\nsoup = soup.select_one(&#39;p [href=&quot;http://example.com/tillie&quot;]&#39;)\n# 通过 id 名查找\nsoup.select_one(&#39;#ID&#39;)\n# 通过类名查找\nsoup.select_one(&#39;.sister&#39;)\n#循环\nfor i in soup:\n    print(i.text)\n\n#--------\n# 获取属性|\n#--------\nlist[0].get(&#39;href&#39;)\n\n\n#--------\n# Xpath|\n#--------\ndemo = selector.xpath(&#39;&#39;)\n</code></pre>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Python"
-            ],
-            "date_published": "2022-02-05T20:05:40+08:00",
-            "date_modified": "2022-02-05T20:05:40+08:00"
         }
     ]
 }

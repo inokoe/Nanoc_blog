@@ -3,12 +3,67 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-18T18:15:32+08:00</updated>
+    <updated>2022-02-23T15:14:16+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Python Telegram 库</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/python-telegram-ku/"/>
+        <id>https://nanoc.work/python-telegram-ku/</id>
+            <category term="Python"/>
+
+        <updated>2022-02-23T15:14:11+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Python html to telegra.ph poster https://pypi.org/project/html-telegraph-poster/ Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows , , , , , , , , , , elements. It also supports embedded youtube and vimeo iframe tags. 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="python-html-to-telegraph-poster">Python html to telegra.ph poster</h2>
+<blockquote>
+<p><a href="https://pypi.org/project/html-telegraph-poster/">https://pypi.org/project/html-telegraph-poster/</a>
+Simple python function to post plain html text to <a href="https://telegra.ph/">https://telegra.ph/</a>. Telegra.ph allows <a>, <blockquote>, <br>, <em>, <figure>, <h3>, <h4>, <img>, <p>, <strong>, elements. It also supports embedded youtube and vimeo iframe tags.</p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Python 网盘分享下载库</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/"/>
+        <id>https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/</id>
+            <category term="Python"/>
+
+        <updated>2022-02-23T15:14:16+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Only ondrive https://pypi.org/project/onedrivedownloader/ https://pypi.org/project/cloud-downloader-equitania/ 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="only-ondrive">Only ondrive</h2>
+<blockquote>
+<p><a href="https://pypi.org/project/onedrivedownloader/">https://pypi.org/project/onedrivedownloader/</a></p>
+</blockquote>
+<h2 id="onedrive-and-others">Onedrive and others</h2>
+<blockquote>
+<p><a href="https://pypi.org/project/cloud-downloader-equitania/">https://pypi.org/project/cloud-downloader-equitania/</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Nginx 伪静态</title>
         <author>
@@ -310,118 +365,6 @@ res = ua.random()
         <content type="html">
             <![CDATA[
                 <pre><code class="language-shell">echo -e &quot;options timeout:1 attempts:1 rotate\nnameserver 8.8.8.8\nnameserver 114.114.114.114&quot; &gt;/etc/resolv.conf;
-</code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>时间线分隔符</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/shi-jian-xian-fen-ge-fu/"/>
-        <id>https://nanoc.work/shi-jian-xian-fen-ge-fu/</id>
-            <category term="Others"/>
-
-        <updated>2022-02-05T20:21:20+08:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://nanoc.work/media/posts/163/2.jpg" alt="" />
-                    时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://nanoc.work/media/posts/163/2.jpg" alt="" />
-                <p>时光荏苒，转眼一年已过，由于服务器到期，将现有写过的仍具有一定价值的文章转移至此，服务暂由Netlify提供，以便无后端快速记录。</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python-request&amp;beautifulsoup爬虫使用方法速记</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/"/>
-        <id>https://nanoc.work/python-requestandbeautifulsouppa-chong-shi-yong-fang-fa-su-ji/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-05T20:05:40+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Python-request&amp;beautifulsoup爬虫使用方法速记 简单记录request&amp;bs4使用方法。 import requests # 浏览器头 headers = { &#39;user_agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11&#39; } # 传参 params = {} params[&#39;email&#39;] = userName[number] params[&#39;passwd&#39;] = userPasswd[number] # 发送request get请求 response = requests.get(url=url, params=params, headers=headers) # 发送request post请求 response&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="python-requestbeautifulsoup爬虫使用方法速记">Python-request&amp;beautifulsoup爬虫使用方法速记</h2>
-<p>简单记录request&amp;bs4使用方法。</p>
-<h2 id="request">request</h2>
-<pre><code class="language-python">import requests
-# 浏览器头
-headers = {
-    &#39;user_agent&#39;: &#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11&#39;
-}
-# 传参
-params = {}
-params[&#39;email&#39;] = userName[number]
-params[&#39;passwd&#39;] = userPasswd[number]
-# 发送request get请求
-response = requests.get(url=url, params=params, headers=headers)
-# 发送request post请求
-response = requests.post(url=url, params=params, headers=headers)
-</code></pre>
-<pre><code class="language-python">headers = {
-    &#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; WOW64)&#39;
-    &#39; AppleWebKit/537.36(KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36&#39;,
-    &#39;Content-Type&#39;: &#39;application/x-www-form-urlencoded&#39;,
-}
-</code></pre>
-<h2 id="beautifulsoup">beautifulsoup</h2>
-<pre><code class="language-python">from bs4 import BeautifulSoup
-
-#-----
-# 解析|
-#-----
-# 发起请求
-response = requests.get(url, headers=headers)
-# 指定编码
-response.encoding = &#39;utf-8&#39;
-soup = BeautifulSoup(response.text)
-# 使用lxml解析
-soup = BeautifulSoup(html, &#39;lxml&#39;)
-
-#--------
-# 元素选择| # 使用selector,返回list
-#--------
-# 选择指定元素一次
-soup = soup.select_one(&quot;a&quot;)
-# 选择全部指定元素
-soup = soup.select(&quot;a&quot;)
-# 选择全部指定元素
-soup = soup.find_all(&quot;a&quot;)
-# 按照属性查找
-soup = soup.select_one(&#39;p [href=&quot;http://example.com/tillie&quot;]&#39;)
-# 通过 id 名查找
-soup.select_one(&#39;#ID&#39;)
-# 通过类名查找
-soup.select_one(&#39;.sister&#39;)
-#循环
-for i in soup:
-    print(i.text)
-
-#--------
-# 获取属性|
-#--------
-list[0].get(&#39;href&#39;)
-
-
-#--------
-# Xpath|
-#--------
-demo = selector.xpath(&#39;&#39;)
 </code></pre>
 
             ]]>
