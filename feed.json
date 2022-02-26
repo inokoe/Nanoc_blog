@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/openwrt-ge-shi-hua-upanying-pan/",
+            "url": "https://nanoc.work/openwrt-ge-shi-hua-upanying-pan/",
+            "title": "Openwrt 格式化U盘、硬盘",
+            "summary": "安装软件 opkg update opkg install e4fsprogs lsblk 查看硬盘命令 df -h ls /dev/sd* lsblk 格式化 确定硬盘符后 mkfs.ext4 /dev/xxx 其他参考 https://www.cnblogs.com/clphp/p/6399119.html https://openwrt.org/packages/pkgdata/lsblk ",
+            "content_html": "<h2 id=\"安装软件\">安装软件</h2>\n<pre><code>opkg update\nopkg install e4fsprogs lsblk\n</code></pre>\n<h2 id=\"查看硬盘命令\">查看硬盘命令</h2>\n<pre><code>df -h\nls /dev/sd*\nlsblk\n</code></pre>\n<h2 id=\"格式化\">格式化</h2>\n<p>确定硬盘符后</p>\n<pre><code>mkfs.ext4 /dev/xxx\n</code></pre>\n<h2 id=\"其他参考\">其他参考</h2>\n<blockquote>\n<p><a href=\"https://www.cnblogs.com/clphp/p/6399119.html\">https://www.cnblogs.com/clphp/p/6399119.html</a>\n<a href=\"https://openwrt.org/packages/pkgdata/lsblk\">https://openwrt.org/packages/pkgdata/lsblk</a></p>\n</blockquote>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Linux"
+            ],
+            "date_published": "2022-02-26T12:56:49+08:00",
+            "date_modified": "2022-02-26T12:56:54+08:00"
+        },
+        {
             "id": "https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/",
             "url": "https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/",
             "title": "Github Action Self hosted 配置问题",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-02-06T22:52:15+08:00",
             "date_modified": "2022-02-08T16:40:30+08:00"
-        },
-        {
-            "id": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
-            "url": "https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/",
-            "title": "Linux 服务器面板汇总",
-            "summary": "用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好 以下将列举我所使用过的几个产品。 国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS ",
-            "content_html": "<h2 id=\"用途\">用途</h2>\n<p>这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。</p>\n<ul>\n<li>快速部署LNMP、LAMP</li>\n<li>提供 Let’s Encrypt 证书或自由证书启用HTTPS</li>\n<li>隐藏了部分技术细节对新手友好\n以下将列举我所使用过的几个产品。</li>\n</ul>\n<!-- more -->\n\n<h2 id=\"国内\">国内</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>宝塔</td>\n<td>为Python所编写，提供免费版，适合所有人</td>\n</tr>\n<tr>\n<td>AMH面板</td>\n<td>起始2011年，但UI较难懂，适合具有一定经验</td>\n</tr>\n</tbody></table>\n<h2 id=\"国外\">国外</h2>\n<table>\n<thead>\n<tr>\n<th>名字</th>\n<th>描述</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>cyberpanel</td>\n<td>使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验</td>\n</tr>\n<tr>\n<td>Vesta</td>\n<td>提供LNMP、LAMP，邮箱，DNS</td>\n</tr>\n</tbody></table>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Linux"
-            ],
-            "date_published": "2022-02-06T22:09:21+08:00",
-            "date_modified": "2022-02-06T22:54:47+08:00"
         }
     ]
 }

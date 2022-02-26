@@ -3,12 +3,51 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-26T12:28:41+08:00</updated>
+    <updated>2022-02-26T12:56:54+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Openwrt 格式化U盘、硬盘</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/openwrt-ge-shi-hua-upanying-pan/"/>
+        <id>https://nanoc.work/openwrt-ge-shi-hua-upanying-pan/</id>
+            <category term="Linux"/>
+
+        <updated>2022-02-26T12:56:54+08:00</updated>
+            <summary>
+                <![CDATA[
+                    安装软件 opkg update opkg install e4fsprogs lsblk 查看硬盘命令 df -h ls /dev/sd* lsblk 格式化 确定硬盘符后 mkfs.ext4 /dev/xxx 其他参考 https://www.cnblogs.com/clphp/p/6399119.html https://openwrt.org/packages/pkgdata/lsblk 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="安装软件">安装软件</h2>
+<pre><code>opkg update
+opkg install e4fsprogs lsblk
+</code></pre>
+<h2 id="查看硬盘命令">查看硬盘命令</h2>
+<pre><code>df -h
+ls /dev/sd*
+lsblk
+</code></pre>
+<h2 id="格式化">格式化</h2>
+<p>确定硬盘符后</p>
+<pre><code>mkfs.ext4 /dev/xxx
+</code></pre>
+<h2 id="其他参考">其他参考</h2>
+<blockquote>
+<p><a href="https://www.cnblogs.com/clphp/p/6399119.html">https://www.cnblogs.com/clphp/p/6399119.html</a>
+<a href="https://openwrt.org/packages/pkgdata/lsblk">https://openwrt.org/packages/pkgdata/lsblk</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Github Action Self hosted 配置问题</title>
         <author>
@@ -358,71 +397,6 @@ vhost中包含了不同站点Nginx的配置文件</p>
 <p>/usr/local/bin</p>
 <h2 id="reids客户端路径">Reids客户端路径</h2>
 <p>/usr/local/redis-6.2/bin/redis-cli</p>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Linux 服务器面板汇总</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/"/>
-        <id>https://nanoc.work/linux-fu-wu-qi-mian-ban-hui-zong-2/</id>
-            <category term="Linux"/>
-
-        <updated>2022-02-06T22:54:47+08:00</updated>
-            <summary>
-                <![CDATA[
-                    用途 这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。 快速部署LNMP、LAMP 提供 Let’s Encrypt 证书或自由证书启用HTTPS 隐藏了部分技术细节对新手友好 以下将列举我所使用过的几个产品。 国内 名字 描述 宝塔 为Python所编写，提供免费版，适合所有人 AMH面板 起始2011年，但UI较难懂，适合具有一定经验 国外 名字 描述 cyberpanel 使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验 Vesta 提供LNMP、LAMP，邮箱，DNS 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="用途">用途</h2>
-<p>这里主要指提供Web Server环境快速部署，以快速上线PHP项目，并提供优质的性能体验，或降低开站门槛提供完整的建站体验。</p>
-<ul>
-<li>快速部署LNMP、LAMP</li>
-<li>提供 Let’s Encrypt 证书或自由证书启用HTTPS</li>
-<li>隐藏了部分技术细节对新手友好
-以下将列举我所使用过的几个产品。</li>
-</ul>
-<!-- more -->
-
-<h2 id="国内">国内</h2>
-<table>
-<thead>
-<tr>
-<th>名字</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>宝塔</td>
-<td>为Python所编写，提供免费版，适合所有人</td>
-</tr>
-<tr>
-<td>AMH面板</td>
-<td>起始2011年，但UI较难懂，适合具有一定经验</td>
-</tr>
-</tbody></table>
-<h2 id="国外">国外</h2>
-<table>
-<thead>
-<tr>
-<th>名字</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>cyberpanel</td>
-<td>使用Openlitespeed，UI简洁，提供免费版，完整的DNS和邮局体验</td>
-</tr>
-<tr>
-<td>Vesta</td>
-<td>提供LNMP、LAMP，邮箱，DNS</td>
-</tr>
-</tbody></table>
 
             ]]>
         </content>
