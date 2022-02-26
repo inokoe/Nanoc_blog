@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/",
+            "url": "https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/",
+            "title": "Github Action Self hosted 配置问题",
+            "summary": "Must not run with sudo 修改 ./config.sh 内容 vi ./config.sh 删除这部分 if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then echo &quot;Must not run with sudo&quot; exit 1 fi 或者在命令前部添加： RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 参考 https://stackoverflow.com/questions/66085793/must-not-run-with-sudo# https://www.cnblogs.com/mingyanzhen/p/11361207.html https://bit.ly/3IqkOKW 参考 https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/ https://github.com/actions/setup-python/issues/92 https://github.com/actions/setup-python/issues/96 ",
+            "content_html": "<h2 id=\"must-not-run-with-sudo\">Must not run with sudo</h2>\n<blockquote>\n<p>修改 ./config.sh 内容</p>\n</blockquote>\n<pre><code>vi ./config.sh\n</code></pre>\n<p>删除这部分</p>\n<pre><code>if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then\n    echo &quot;Must not run with sudo&quot;\n    exit 1\nfi\n</code></pre>\n<p>或者在命令前部添加：</p>\n<pre><code>RUNNER_ALLOW_RUNASROOT=&quot;1&quot; \n</code></pre>\n<p>参考</p>\n<blockquote>\n<p><a href=\"https://stackoverflow.com/questions/66085793/must-not-run-with-sudo#\">https://stackoverflow.com/questions/66085793/must-not-run-with-sudo#</a>\n<a href=\"https://www.cnblogs.com/mingyanzhen/p/11361207.html\">https://www.cnblogs.com/mingyanzhen/p/11361207.html</a>\n<a href=\"https://bit.ly/3IqkOKW\">https://bit.ly/3IqkOKW</a></p>\n</blockquote>\n<h2 id=\"version-3x-with-arch-x64-not-found\">Version 3.x with arch x64 not found</h2>\n<p>参考</p>\n<blockquote>\n<p><a href=\"https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/\">https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/</a><br><a href=\"https://github.com/actions/setup-python/issues/92\">https://github.com/actions/setup-python/issues/92</a><br><a href=\"https://github.com/actions/setup-python/issues/96\">https://github.com/actions/setup-python/issues/96</a></p>\n</blockquote>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+                   "Linux"
+            ],
+            "date_published": "2022-02-26T12:25:47+08:00",
+            "date_modified": "2022-02-26T12:28:41+08:00"
+        },
+        {
             "id": "https://nanoc.work/github-action-zhi-xing-wan-bi-gitdao-cang-ku/",
             "url": "https://nanoc.work/github-action-zhi-xing-wan-bi-gitdao-cang-ku/",
             "title": "Github Action 执行完毕GIT到仓库",
@@ -143,21 +158,6 @@
             ],
             "date_published": "2022-02-06T22:09:21+08:00",
             "date_modified": "2022-02-06T22:54:47+08:00"
-        },
-        {
-            "id": "https://nanoc.work/python-useragent-ku/",
-            "url": "https://nanoc.work/python-useragent-ku/",
-            "title": "Python UserAgent 库",
-            "summary": "Python UserAgent 库 my-fake-useragent https://pypi.org/project/my-fake-useragent/ https://github.com/a358003542/my-fake-useragent 针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。 pip install my_fake_useragent //python3 pip3 install my_fake_useragent 特点 提供浏览器定制，如Chrome、Edge，包括移动端 from my_fake_useragent import UserAgent ua = UserAgent(family=&#39;chrome&#39;) res = ua.random() 在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。 ",
-            "content_html": "<h1 id=\"python-useragent-库\">Python UserAgent 库</h1>\n<p>my-fake-useragent</p>\n<blockquote>\n<p><a href=\"https://pypi.org/project/my-fake-useragent/\">https://pypi.org/project/my-fake-useragent/</a>\n<a href=\"https://github.com/a358003542/my-fake-useragent\">https://github.com/a358003542/my-fake-useragent</a></p>\n</blockquote>\n<h2 id=\"用处\">用处</h2>\n<p>针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。</p>\n<h2 id=\"安装\">安装</h2>\n<pre><code class=\"language-shell\">pip install my_fake_useragent\n//python3\npip3 install my_fake_useragent\n</code></pre>\n<h2 id=\"特点\">特点</h2>\n<p>提供浏览器定制，如Chrome、Edge，包括移动端</p>\n<h2 id=\"使用\">使用</h2>\n<pre><code class=\"language-python\">from my_fake_useragent import UserAgent\nua = UserAgent(family=&#39;chrome&#39;)\nres = ua.random()\n</code></pre>\n<p>在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。</p>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Python"
-            ],
-            "date_published": "2022-02-06T14:14:00+08:00",
-            "date_modified": "2022-02-06T14:14:00+08:00"
         }
     ]
 }

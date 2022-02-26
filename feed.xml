@@ -3,12 +3,59 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-23T16:49:04+08:00</updated>
+    <updated>2022-02-26T12:28:41+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Github Action Self hosted 配置问题</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/"/>
+        <id>https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/</id>
+            <category term="Linux"/>
+
+        <updated>2022-02-26T12:28:41+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Must not run with sudo 修改 ./config.sh 内容 vi ./config.sh 删除这部分 if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then echo &quot;Must not run with sudo&quot; exit 1 fi 或者在命令前部添加： RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 参考 https://stackoverflow.com/questions/66085793/must-not-run-with-sudo# https://www.cnblogs.com/mingyanzhen/p/11361207.html https://bit.ly/3IqkOKW 参考 https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/ https://github.com/actions/setup-python/issues/92 https://github.com/actions/setup-python/issues/96 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="must-not-run-with-sudo">Must not run with sudo</h2>
+<blockquote>
+<p>修改 ./config.sh 内容</p>
+</blockquote>
+<pre><code>vi ./config.sh
+</code></pre>
+<p>删除这部分</p>
+<pre><code>if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then
+    echo &quot;Must not run with sudo&quot;
+    exit 1
+fi
+</code></pre>
+<p>或者在命令前部添加：</p>
+<pre><code>RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 
+</code></pre>
+<p>参考</p>
+<blockquote>
+<p><a href="https://stackoverflow.com/questions/66085793/must-not-run-with-sudo#">https://stackoverflow.com/questions/66085793/must-not-run-with-sudo#</a>
+<a href="https://www.cnblogs.com/mingyanzhen/p/11361207.html">https://www.cnblogs.com/mingyanzhen/p/11361207.html</a>
+<a href="https://bit.ly/3IqkOKW">https://bit.ly/3IqkOKW</a></p>
+</blockquote>
+<h2 id="version-3x-with-arch-x64-not-found">Version 3.x with arch x64 not found</h2>
+<p>参考</p>
+<blockquote>
+<p><a href="https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/">https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/</a><br><a href="https://github.com/actions/setup-python/issues/92">https://github.com/actions/setup-python/issues/92</a><br><a href="https://github.com/actions/setup-python/issues/96">https://github.com/actions/setup-python/issues/96</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Github Action 执行完毕GIT到仓库</title>
         <author>
@@ -376,48 +423,6 @@ vhost中包含了不同站点Nginx的配置文件</p>
 <td>提供LNMP、LAMP，邮箱，DNS</td>
 </tr>
 </tbody></table>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python UserAgent 库</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/python-useragent-ku/"/>
-        <id>https://nanoc.work/python-useragent-ku/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-06T14:14:00+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Python UserAgent 库 my-fake-useragent https://pypi.org/project/my-fake-useragent/ https://github.com/a358003542/my-fake-useragent 针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。 pip install my_fake_useragent //python3 pip3 install my_fake_useragent 特点 提供浏览器定制，如Chrome、Edge，包括移动端 from my_fake_useragent import UserAgent ua = UserAgent(family=&#39;chrome&#39;) res = ua.random() 在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1 id="python-useragent-库">Python UserAgent 库</h1>
-<p>my-fake-useragent</p>
-<blockquote>
-<p><a href="https://pypi.org/project/my-fake-useragent/">https://pypi.org/project/my-fake-useragent/</a>
-<a href="https://github.com/a358003542/my-fake-useragent">https://github.com/a358003542/my-fake-useragent</a></p>
-</blockquote>
-<h2 id="用处">用处</h2>
-<p>针对Useragent访问频次限制的站点，每次请求更换一个Useragent即可。</p>
-<h2 id="安装">安装</h2>
-<pre><code class="language-shell">pip install my_fake_useragent
-//python3
-pip3 install my_fake_useragent
-</code></pre>
-<h2 id="特点">特点</h2>
-<p>提供浏览器定制，如Chrome、Edge，包括移动端</p>
-<h2 id="使用">使用</h2>
-<pre><code class="language-python">from my_fake_useragent import UserAgent
-ua = UserAgent(family=&#39;chrome&#39;)
-res = ua.random()
-</code></pre>
-<p>在限制Useragent的情况下，且长达数万频次的爬取中，程序顺利执行完毕。</p>
 
             ]]>
         </content>
