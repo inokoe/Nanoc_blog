@@ -3,12 +3,50 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-02-26T12:56:54+08:00</updated>
+    <updated>2022-03-01T21:06:18+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>开启Crontab日志</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/open-crontab-log/"/>
+        <id>https://nanoc.work/open-crontab-log/</id>
+            <category term="Linux"/>
+
+        <updated>2022-03-01T21:06:18+08:00</updated>
+            <summary>
+                <![CDATA[
+                    modify config # vi /etc/rsyslog.conf 将 #cron.* /var/log/cron.log 变为 cron.* /var/log/cron.log Restart service # /etc/init.d/rsyslog restart 环境变量以及参考 https://www.cnblogs.com/yinkh/p/5757849.html https://www.cnblogs.com/grefr/p/6095013.html 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="modify-config">modify config</h2>
+<pre><code># vi /etc/rsyslog.conf
+</code></pre>
+<p>将</p>
+<pre><code>#cron.* /var/log/cron.log
+</code></pre>
+<p>变为</p>
+<pre><code>cron.* /var/log/cron.log
+</code></pre>
+<h2 id="restart-service">Restart service</h2>
+<pre><code># /etc/init.d/rsyslog restart
+</code></pre>
+<h2 id="环境变量以及参考">环境变量以及参考</h2>
+<blockquote>
+<p><a href="https://www.cnblogs.com/yinkh/p/5757849.html">https://www.cnblogs.com/yinkh/p/5757849.html</a>
+<a href="https://www.cnblogs.com/grefr/p/6095013.html">https://www.cnblogs.com/grefr/p/6095013.html</a></p>
+</blockquote>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Openwrt 格式化U盘、硬盘</title>
         <author>
@@ -366,37 +404,6 @@ pip3 install requests</p>
 except requests.exceptions.RequestException as e:
     function()
 </code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>AMH面板路径</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/amhmian-ban-lu-jing/"/>
-        <id>https://nanoc.work/amhmian-ban-lu-jing/</id>
-            <category term="Linux"/>
-
-        <updated>2022-02-08T16:40:30+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Python连接数据库 路径位于/tmp/mysql*.sock 例：unix_socket=’/tmp/mysql-5.6.sock’ /home/wwwroot/ vhost中包含了不同站点Nginx的配置文件 /usr/local/bin /usr/local/redis-6.2/bin/redis-cli 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="python连接数据库">Python连接数据库</h2>
-<p>路径位于/tmp/mysql*.sock
-例：unix_socket=’/tmp/mysql-5.6.sock’</p>
-<h2 id="运行环境配置路径">运行环境配置路径</h2>
-<p>/home/wwwroot/
-vhost中包含了不同站点Nginx的配置文件</p>
-<h2 id="软件配置">软件配置</h2>
-<p>/usr/local/bin</p>
-<h2 id="reids客户端路径">Reids客户端路径</h2>
-<p>/usr/local/redis-6.2/bin/redis-cli</p>
 
             ]]>
         </content>
