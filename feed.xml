@@ -3,7 +3,7 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-03-01T21:06:18+08:00</updated>
+    <updated>2022-03-08T21:48:55+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
@@ -95,15 +95,16 @@ lsblk
         <id>https://nanoc.work/github-action-self-hosted-pei-zhi-wen-ti/</id>
             <category term="Linux"/>
 
-        <updated>2022-02-26T12:28:41+08:00</updated>
+        <updated>2022-03-08T21:48:55+08:00</updated>
             <summary>
                 <![CDATA[
-                    Must not run with sudo 修改 ./config.sh 内容 vi ./config.sh 删除这部分 if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then echo &quot;Must not run with sudo&quot; exit 1 fi 或者在命令前部添加： RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 参考 https://stackoverflow.com/questions/66085793/must-not-run-with-sudo# https://www.cnblogs.com/mingyanzhen/p/11361207.html https://bit.ly/3IqkOKW 参考 https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/ https://github.com/actions/setup-python/issues/92 https://github.com/actions/setup-python/issues/96 
+                    Must not run with sudo 您可以通过创建用户来解决或者如下: 修改 ./config.sh 内容 vi ./config.sh 删除这部分 if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then echo &quot;Must not run with sudo&quot; exit 1 fi 或者在命令前部添加： RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 参考 https://stackoverflow.com/questions/66085793/must-not-run-with-sudo# https://www.cnblogs.com/mingyanzhen/p/11361207.html https://bit.ly/3IqkOKW 参考 https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/ https://github.com/actions/setup-python/issues/92 https://github.com/actions/setup-python/issues/96 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2 id="must-not-run-with-sudo">Must not run with sudo</h2>
+<p>您可以通过创建用户来解决或者如下:</p>
 <blockquote>
 <p>修改 ./config.sh 内容</p>
 </blockquote>
