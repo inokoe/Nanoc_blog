@@ -3,12 +3,58 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-03-08T21:48:55+08:00</updated>
+    <updated>2022-05-02T15:43:52+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>Docker 基础命令</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/docker-ji-chu-ming-ling-2/"/>
+        <id>https://nanoc.work/docker-ji-chu-ming-ling-2/</id>
+            <category term="Docker"/>
+
+        <updated>2022-05-02T15:43:52+08:00</updated>
+            <summary>
+                <![CDATA[
+                     
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <div  class="gallery-wrapper gallery-wrapper--center">
+    <div class="gallery" data-columns="3">
+      <figure class="gallery__item">
+      <a href="https://nanoc.work/media/posts/181/gallery/1.png" data-size="502x557">
+        <img loading="lazy" src="https://nanoc.work/media/posts/181/gallery/1-thumbnail.png" height="557" width="502" alt="" />
+      </a>
+      
+    </figure><figure class="gallery__item">
+      <a href="https://nanoc.work/media/posts/181/gallery/2.png" data-size="1361x567">
+        <img loading="lazy" src="https://nanoc.work/media/posts/181/gallery/2-thumbnail.png" height="320" width="768" alt="" />
+      </a>
+      
+    </figure><figure class="gallery__item">
+      <a href="https://nanoc.work/media/posts/181/gallery/3.png" data-size="1440x562">
+        <img loading="lazy" src="https://nanoc.work/media/posts/181/gallery/3-thumbnail.png" height="300" width="768" alt="" />
+      </a>
+      
+    </figure><figure class="gallery__item">
+      <a href="https://nanoc.work/media/posts/181/gallery/4.png" data-size="959x557">
+        <img loading="lazy" src="https://nanoc.work/media/posts/181/gallery/4-thumbnail.png" height="446" width="768" alt="" />
+      </a>
+      
+    </figure>
+    </div>
+  </div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>开启Crontab日志</title>
         <author>
@@ -351,60 +397,6 @@ Mux只需要在客户端启用， 服务器端自适应。</p>
 <blockquote>
 <p><a href="https://klmag.net/index">https://klmag.net/index</a><br><a href="https://neatmanga.com/">https://neatmanga.com/</a></p>
 </blockquote>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python Request Timeout</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/python-request/"/>
-        <id>https://nanoc.work/python-request/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-08T17:50:26+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Source You can find more data from URLs: https://github.com/psf/requests https://docs.python-requests.org/en/latest/ https://pypi.org/project/requests/ pip install requests or pip3 install requests In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception. Response.raise_for_status() will raise an HTTPError if the HTTP&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="source">Source</h2>
-<p>You can find more data from URLs:</p>
-<blockquote>
-<p><a href="https://github.com/psf/requests">https://github.com/psf/requests</a><br><a href="https://docs.python-requests.org/en/latest/">https://docs.python-requests.org/en/latest/</a>
-<a href="https://pypi.org/project/requests/">https://pypi.org/project/requests/</a></p>
-</blockquote>
-<h2 id="install">Install</h2>
-<p>pip install requests
-or
-pip3 install requests</p>
-<h2 id="errors-and-exceptions">Errors and Exceptions</h2>
-<blockquote>
-<p>In the event of a network problem (e.g. DNS failure, refused connection, etc), Requests will raise a ConnectionError exception.</p>
-</blockquote>
-<blockquote>
-<p>Response.raise_for_status() will raise an HTTPError if the HTTP request returned an unsuccessful status code.</p>
-</blockquote>
-<blockquote>
-<p>If a request times out, a Timeout exception is raised.</p>
-</blockquote>
-<blockquote>
-<p>If a request exceeds the configured number of maximum redirections, a TooManyRedirects exception is raised.</p>
-</blockquote>
-<blockquote>
-<p>All exceptions that Requests explicitly raises inherit from requests.exceptions.RequestException.</p>
-</blockquote>
-<h2 id="make-timeout">Make Timeout</h2>
-<p>So we can set the timeout as follows:</p>
-<pre><code class="language-python">try:
-    response = requests.get(url,timeout=2)
-except requests.exceptions.RequestException as e:
-    function()
-</code></pre>
 
             ]]>
         </content>
