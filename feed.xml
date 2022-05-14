@@ -3,12 +3,47 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-05-02T15:46:21+08:00</updated>
+    <updated>2022-05-14T09:35:50+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>How to watch netflix 4k with Edge</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/how-to-watch-netflix-4k-with-edge-2/"/>
+        <id>https://nanoc.work/how-to-watch-netflix-4k-with-edge-2/</id>
+            <category term="Windows"/>
+
+        <updated>2022-05-14T09:35:50+08:00</updated>
+            <summary>
+                <![CDATA[
+                    4k screen is necessary A 4K resolution screen is required. Make sure your screen resolution is 3840x2160. In this step you need to open: edge://flags/ and search ready,you will see the option PlayReady DRM for Windows make sure is Enabled. You need to install hevc&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="4k-screen-is-necessary">4k screen is necessary</h2>
+<p>A 4K resolution screen is required. Make sure your screen resolution is 3840x2160.</p>
+<h2 id="setting-edge">Setting Edge</h2>
+<p>In this step you need to open:</p>
+<pre><code>edge://flags/
+</code></pre>
+<p>and search <code>ready</code>,you will see the option <code>PlayReady DRM for Windows</code> make sure is <code>Enabled</code>.</p>
+<h2 id="install-hevc">Install HEVC</h2>
+<p>You need to install hevc video expansion from Microsoft Store. 
+HEVC is a crucial expansion.</p>
+<h2 id="check-you-netflix">Check you Netflix</h2>
+<p>Make sure your package supports and enables 4K playback.</p>
+<h2 id="now-you-success">Now, you success</h2>
+<p>Just restart Edge, and open Netflix you will see 4k label.</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Docker 基础命令</title>
         <author>
@@ -21,7 +56,7 @@
         <updated>2022-05-02T15:46:21+08:00</updated>
             <summary>
                 <![CDATA[
-                     Docker基础命令 
+                    Docker基础命令
                 ]]>
             </summary>
         <content type="html">
@@ -31,7 +66,7 @@
     Docker基础命令
   </p>
 
-  <div  class="gallery-wrapper gallery-wrapper--center">
+  <div  class="gallery-wrapper">
     <div class="gallery" data-columns="3">
       <figure class="gallery__item">
       <a href="https://nanoc.work/media/posts/181/gallery/1-2.png" data-size="502x557">
@@ -75,7 +110,7 @@
         <updated>2022-03-01T21:06:18+08:00</updated>
             <summary>
                 <![CDATA[
-                    modify config # vi /etc/rsyslog.conf 将 #cron.* /var/log/cron.log 变为 cron.* /var/log/cron.log Restart service # /etc/init.d/rsyslog restart 环境变量以及参考 https://www.cnblogs.com/yinkh/p/5757849.html https://www.cnblogs.com/grefr/p/6095013.html 
+                    modify config # vi /etc/rsyslog.conf 将 #cron.* /var/log/cron.log 变为 cron.* /var/log/cron.log Restart service # /etc/init.d/rsyslog restart 环境变量以及参考 https://www.cnblogs.com/yinkh/p/5757849.html https://www.cnblogs.com/grefr/p/6095013.html
                 ]]>
             </summary>
         <content type="html">
@@ -113,7 +148,7 @@
         <updated>2022-02-26T12:56:54+08:00</updated>
             <summary>
                 <![CDATA[
-                    安装软件 opkg update opkg install e4fsprogs lsblk 查看硬盘命令 df -h ls /dev/sd* lsblk 格式化 确定硬盘符后 mkfs.ext4 /dev/xxx 其他参考 https://www.cnblogs.com/clphp/p/6399119.html https://openwrt.org/packages/pkgdata/lsblk 
+                    安装软件 opkg update opkg install e4fsprogs lsblk 查看硬盘命令 df -h ls /dev/sd* lsblk 格式化 确定硬盘符后 mkfs.ext4 /dev/xxx 其他参考 https://www.cnblogs.com/clphp/p/6399119.html https://openwrt.org/packages/pkgdata/lsblk
                 ]]>
             </summary>
         <content type="html">
@@ -152,7 +187,7 @@ lsblk
         <updated>2022-03-08T21:48:55+08:00</updated>
             <summary>
                 <![CDATA[
-                    Must not run with sudo 您可以通过创建用户来解决或者如下: 修改 ./config.sh 内容 vi ./config.sh 删除这部分 if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then echo &quot;Must not run with sudo&quot; exit 1 fi 或者在命令前部添加： RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 参考 https://stackoverflow.com/questions/66085793/must-not-run-with-sudo# https://www.cnblogs.com/mingyanzhen/p/11361207.html https://bit.ly/3IqkOKW 参考 https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/ https://github.com/actions/setup-python/issues/92 https://github.com/actions/setup-python/issues/96 
+                    Must not run with sudo 您可以通过创建用户来解决或者如下: 修改 ./config.sh 内容 vi ./config.sh 删除这部分 if [ $user_id -eq 0 -a -z &quot;$AGENT_ALLOW_RUNASROOT&quot; ]; then echo &quot;Must not run with sudo&quot; exit 1 fi 或者在命令前部添加： RUNNER_ALLOW_RUNASROOT=&quot;1&quot; 参考 https://stackoverflow.com/questions/66085793/must-not-run-with-sudo# https://www.cnblogs.com/mingyanzhen/p/11361207.html https://bit.ly/3IqkOKW 参考 https://dev.classmethod.jp/articles/setup-python-on-self-hosted-runner/ https://github.com/actions/setup-python/issues/92 https://github.com/actions/setup-python/issues/96
                 ]]>
             </summary>
         <content type="html">
@@ -274,7 +309,7 @@ jobs:
         <updated>2022-02-23T15:22:19+08:00</updated>
             <summary>
                 <![CDATA[
-                    Python html to telegra.ph poster https://pypi.org/project/html-telegraph-poster/ Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows &lt;a&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;em&gt;, &lt;figure&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;img&gt;, &lt;p&gt;, &lt;strong&gt;, elements. It also supports embedded youtube and vimeo iframe tags. 
+                    Python html to telegra.ph poster https://pypi.org/project/html-telegraph-poster/ Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows &lt;a&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;em&gt;, &lt;figure&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;img&gt;, &lt;p&gt;, &lt;strong&gt;, elements. It also supports embedded youtube and vimeo iframe tags.
                 ]]>
             </summary>
         <content type="html">
@@ -301,7 +336,7 @@ jobs:
         <updated>2022-02-23T15:14:16+08:00</updated>
             <summary>
                 <![CDATA[
-                    Only ondrive https://pypi.org/project/onedrivedownloader/ https://pypi.org/project/cloud-downloader-equitania/ 
+                    Only ondrive https://pypi.org/project/onedrivedownloader/ https://pypi.org/project/cloud-downloader-equitania/
                 ]]>
             </summary>
         <content type="html">
@@ -330,7 +365,7 @@ jobs:
         <updated>2022-02-18T18:15:32+08:00</updated>
             <summary>
                 <![CDATA[
-                    入门 您需要了解以下知识 使 /public/a.php?b=test 变为 /public/a-test.json location ~ ^(.*)/public/a-(.*)\.json { rewrite /public/a-(.*).json /public/a.php?b=$1 last; } 文档 https://www.cnblogs.com/kevingrace/p/10393234.html 
+                    入门 您需要了解以下知识 使 /public/a.php?b=test 变为 /public/a-test.json location ~ ^(.*)/public/a-(.*)\.json { rewrite /public/a-(.*).json /public/a.php?b=$1 last; } 文档 https://www.cnblogs.com/kevingrace/p/10393234.html
                 ]]>
             </summary>
         <content type="html">
@@ -367,7 +402,7 @@ jobs:
         <updated>2022-02-10T13:17:40+08:00</updated>
             <summary>
                 <![CDATA[
-                    Mux多路复用 顾名思义，Mux功能可将多个TCP连接合并为一个TCP连接，以减少TCP握手延迟，但此种方法并不能提高吞吐量，即不会突破原始链路最大速率，适用于高延迟丢包线路，正常线路不建议开，会降低代理稳定性。 Mux只需要在客户端启用， 服务器端自适应。 https://www.v2ray.com/chapter_02/mux.html https://www.v2ray.com/developer/protocols/muxcool.html 
+                    Mux多路复用 顾名思义，Mux功能可将多个TCP连接合并为一个TCP连接，以减少TCP握手延迟，但此种方法并不能提高吞吐量，即不会突破原始链路最大速率，适用于高延迟丢包线路，正常线路不建议开，会降低代理稳定性。 Mux只需要在客户端启用， 服务器端自适应。 https://www.v2ray.com/chapter_02/mux.html https://www.v2ray.com/developer/protocols/muxcool.html
                 ]]>
             </summary>
         <content type="html">
@@ -378,32 +413,6 @@ Mux只需要在客户端启用， 服务器端自适应。</p>
 <blockquote>
 <p><a href="https://www.v2ray.com/chapter_02/mux.html">https://www.v2ray.com/chapter_02/mux.html</a>
 <a href="https://www.v2ray.com/developer/protocols/muxcool.html">https://www.v2ray.com/developer/protocols/muxcool.html</a></p>
-</blockquote>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Raw Manga Website</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/raw-manga-website/"/>
-        <id>https://nanoc.work/raw-manga-website/</id>
-            <category term="Others"/>
-
-        <updated>2022-02-08T17:50:33+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Raw manga You can find raw manga from the websites: https://klmag.net/index https://neatmanga.com/ 
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="raw-manga">Raw manga</h2>
-<p>You can find raw manga from the websites:</p>
-<blockquote>
-<p><a href="https://klmag.net/index">https://klmag.net/index</a><br><a href="https://neatmanga.com/">https://neatmanga.com/</a></p>
 </blockquote>
 
             ]]>
