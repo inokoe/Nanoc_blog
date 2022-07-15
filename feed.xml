@@ -3,12 +3,39 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-07-15T17:24:26+08:00</updated>
+    <updated>2022-07-15T22:00:04+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>windows10 开启休眠</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/windows10-kai-qi-xiu-mian/"/>
+        <id>https://nanoc.work/windows10-kai-qi-xiu-mian/</id>
+
+        <updated>2022-07-15T22:00:04+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Powershell #查看所有的电池管理模式 powercfg /a #开启休眠模式，此时在控制面版将能够看到休眠 powercfg -h on
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="powershell">Powershell</h2>
+<pre><code>#查看所有的电池管理模式
+powercfg /a
+
+#开启休眠模式，此时在控制面版将能够看到休眠
+powercfg -h on
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>CURL 用法小记</title>
         <author>
@@ -379,35 +406,6 @@ jobs:
 </blockquote>
 <pre><code>Simple python function to post plain html text to https://telegra.ph/. Telegra.ph allows &lt;a&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;em&gt;, &lt;figure&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;img&gt;, &lt;p&gt;, &lt;strong&gt;, elements. It also supports embedded youtube and vimeo iframe tags.
 </code></pre>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Python 网盘分享下载库</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/"/>
-        <id>https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/</id>
-            <category term="Python"/>
-
-        <updated>2022-02-23T15:14:16+08:00</updated>
-            <summary>
-                <![CDATA[
-                    Only ondrive https://pypi.org/project/onedrivedownloader/ https://pypi.org/project/cloud-downloader-equitania/
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="only-ondrive">Only ondrive</h2>
-<blockquote>
-<p><a href="https://pypi.org/project/onedrivedownloader/">https://pypi.org/project/onedrivedownloader/</a></p>
-</blockquote>
-<h2 id="onedrive-and-others">Onedrive and others</h2>
-<blockquote>
-<p><a href="https://pypi.org/project/cloud-downloader-equitania/">https://pypi.org/project/cloud-downloader-equitania/</a></p>
-</blockquote>
 
             ]]>
         </content>

@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://nanoc.work/windows10-kai-qi-xiu-mian/",
+            "url": "https://nanoc.work/windows10-kai-qi-xiu-mian/",
+            "title": "windows10 开启休眠",
+            "summary": "Powershell #查看所有的电池管理模式 powercfg /a #开启休眠模式，此时在控制面版将能够看到休眠 powercfg -h on",
+            "content_html": "<h2 id=\"powershell\">Powershell</h2>\n<pre><code>#查看所有的电池管理模式\npowercfg /a\n\n#开启休眠模式，此时在控制面版将能够看到休眠\npowercfg -h on\n</code></pre>\n",
+            "author": {
+                "name": "Nanoc"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-07-15T22:00:04+08:00",
+            "date_modified": "2022-07-15T22:00:04+08:00"
+        },
+        {
             "id": "https://nanoc.work/curl-yong-fa-xiao-ji/",
             "url": "https://nanoc.work/curl-yong-fa-xiao-ji/",
             "title": "CURL 用法小记",
@@ -142,21 +156,6 @@
             ],
             "date_published": "2022-02-23T15:14:04+08:00",
             "date_modified": "2022-02-23T15:22:19+08:00"
-        },
-        {
-            "id": "https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/",
-            "url": "https://nanoc.work/python-wang-pan-fen-xiang-xia-zai-ku/",
-            "title": "Python 网盘分享下载库",
-            "summary": "Only ondrive https://pypi.org/project/onedrivedownloader/ https://pypi.org/project/cloud-downloader-equitania/",
-            "content_html": "<h2 id=\"only-ondrive\">Only ondrive</h2>\n<blockquote>\n<p><a href=\"https://pypi.org/project/onedrivedownloader/\">https://pypi.org/project/onedrivedownloader/</a></p>\n</blockquote>\n<h2 id=\"onedrive-and-others\">Onedrive and others</h2>\n<blockquote>\n<p><a href=\"https://pypi.org/project/cloud-downloader-equitania/\">https://pypi.org/project/cloud-downloader-equitania/</a></p>\n</blockquote>\n",
-            "author": {
-                "name": "Nanoc"
-            },
-            "tags": [
-                   "Python"
-            ],
-            "date_published": "2022-02-22T13:18:12+08:00",
-            "date_modified": "2022-02-23T15:14:16+08:00"
         }
     ]
 }
