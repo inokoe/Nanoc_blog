@@ -3,12 +3,49 @@
     <title>Nanoc</title>
     <link href="https://nanoc.work/feed.xml" rel="self" />
     <link href="https://nanoc.work" />
-    <updated>2022-05-20T11:00:56+08:00</updated>
+    <updated>2022-07-15T17:24:26+08:00</updated>
     <author>
         <name>Nanoc</name>
     </author>
     <id>https://nanoc.work</id>
 
+    <entry>
+        <title>CURL 用法小记</title>
+        <author>
+            <name>Nanoc</name>
+        </author>
+        <link href="https://nanoc.work/curl-yong-fa-xiao-ji/"/>
+        <id>https://nanoc.work/curl-yong-fa-xiao-ji/</id>
+
+        <updated>2022-07-15T17:24:26+08:00</updated>
+            <summary>
+                <![CDATA[
+                    输出状态码以及抛弃多余的信息 -w &quot;%{http_code}\n&quot; -o /dev/null 指定域名解析地址 --resolve *:443:${ip} 指定请求IP协议 --ipv4 --ipv6 参数 -s 寂静模式 -I 只输出请求头信息 -m 超时时间 -o /dev/null /dev/null是一个空设备，向其输出将抛弃这些数据。
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="输出状态码以及抛弃多余的信息">输出状态码以及抛弃多余的信息</h2>
+<pre><code>-w &quot;%{http_code}\n&quot; -o /dev/null
+</code></pre>
+<h2 id="指定域名解析地址">指定域名解析地址</h2>
+<pre><code>--resolve *:443:${ip}
+</code></pre>
+<h2 id="指定请求ip协议">指定请求IP协议</h2>
+<pre><code>--ipv4
+--ipv6
+</code></pre>
+<h2 id="参数">参数</h2>
+<pre><code>-s 寂静模式 
+-I 只输出请求头信息
+-m 超时时间
+</code></pre>
+<h2 id="-o-devnull">-o /dev/null</h2>
+<p>/dev/null是一个空设备，向其输出将抛弃这些数据。</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Windows手动安装驱动</title>
         <author>
@@ -370,43 +407,6 @@ jobs:
 <h2 id="onedrive-and-others">Onedrive and others</h2>
 <blockquote>
 <p><a href="https://pypi.org/project/cloud-downloader-equitania/">https://pypi.org/project/cloud-downloader-equitania/</a></p>
-</blockquote>
-
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Nginx 伪静态</title>
-        <author>
-            <name>Nanoc</name>
-        </author>
-        <link href="https://nanoc.work/nginx-wei-jing-tai/"/>
-        <id>https://nanoc.work/nginx-wei-jing-tai/</id>
-            <category term="Nginx"/>
-
-        <updated>2022-02-18T18:15:32+08:00</updated>
-            <summary>
-                <![CDATA[
-                    入门 您需要了解以下知识 使 /public/a.php?b=test 变为 /public/a-test.json location ~ ^(.*)/public/a-(.*)\.json { rewrite /public/a-(.*).json /public/a.php?b=$1 last; } 文档 https://www.cnblogs.com/kevingrace/p/10393234.html
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h2 id="入门">入门</h2>
-<p>您需要了解以下知识</p>
-<ul>
-<li>正则表达式</li>
-<li>Nginx 配置文件</li>
-</ul>
-<h2 id="实例">实例</h2>
-<p>使 /public/a.php?b=test 变为 /public/a-test.json</p>
-<pre><code>location ~ ^(.*)/public/a-(.*)\.json  {
-  rewrite /public/a-(.*).json /public/a.php?b=$1 last;
-}
-</code></pre>
-<h2 id="文档">文档</h2>
-<blockquote>
-<p><a href="https://www.cnblogs.com/kevingrace/p/10393234.html">https://www.cnblogs.com/kevingrace/p/10393234.html</a></p>
 </blockquote>
 
             ]]>
